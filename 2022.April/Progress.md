@@ -13,4 +13,11 @@ For this project I am using HTML, CSS, JQUERY, JSP, and MySQL.
 In week#1, I tried to make the front end for my website.
 I was wondering how I was going to finish this project and also started studying how to use the Facebook API.
 Which then I learned that it would be more comfortable to use PHP for this project instead of JSP.
-Hence, I decided to use PHP.
+Hence, I decided to use PHP. <br/> 
+Hence, I am going to use **HTML, CSS, JQUERY, PHP, and MySQL** in order to build this application. 
+
+**The Index Page**<br/> (April, Week #2)
+First I made the first log in page using PHP by using the design made previously. For in order for the log-in, we are going to use the OAUTH from Facebook because instagram is from Facebook, currently called Meta. The next few days, I am going to be studying of how to make the log in connection correctly by using Facebook. In order to study this I am using the following link: <br/>
+https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
+
+
