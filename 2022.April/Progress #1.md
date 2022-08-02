@@ -9,7 +9,7 @@ The image below is an image of the home page of the service:
 
 For this project I am using HTML, CSS, JQUERY, JSP, and MySQL.
 
-CHANGES IN PLAN (WEEK #2)
+**CHANGES IN PLAN (WEEK #2)**<br/>
 In week#1, I tried to make the front end for my website.
 I was wondering how I was going to finish this project and also started studying how to use the Facebook API.
 Which then I learned that it would be more comfortable to use PHP for this project instead of JSP.
