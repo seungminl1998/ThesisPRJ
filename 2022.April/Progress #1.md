@@ -8,3 +8,9 @@ The image below is an image of the home page of the service:
 ![Page1](https://user-images.githubusercontent.com/101083759/163997074-8aac57c6-31dc-4cb7-aa29-6c7f35e67442.PNG)
 
 For this project I am using HTML, CSS, JQUERY, JSP, and MySQL.
+
+CHANGES IN PLAN (WEEK #2)
+In week#1, I tried to make the front end for my website.
+I was wondering how I was going to finish this project and also started studying how to use the Facebook API.
+Which then I learned that it would be more comfortable to use PHP for this project instead of JSP.
+Hence, I decided to use PHP.
