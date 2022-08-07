@@ -11,3 +11,5 @@ It will be easier for them to manage their post and profile and they will also b
         **THIS PROJECT WILL NOT BE OPENED FOR OTHER INSTAGRAM INFLUENCERS**.
         
 The project's progress will be written in the **README.md** file in each month with its corresponding source codes.
+
+>By. Seungmin Lee with Student ID. 2016314869
