@@ -20,12 +20,11 @@ Hence, I am going to use **HTML, CSS, JQUERY, PHP, and MySQL** in order to build
 First I made the first log in page using PHP by using the design made previously. For in order for the log-in, we are going to use the OAUTH from Facebook because instagram is from Facebook, currently called Meta. The next few days, I am going to be studying of how to make the log in connection correctly by using Facebook. In order to study this I am using the following link: <br/>
 https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
 
-
 **The Caption Page**<br/>
 The next page that I made was the caption page where the users will be able to save their captions. The reason why I made this was because people save their captions in their notes. In this page, users will be able to save and delete their captions before and after using it. This way, they will be able to have their captions, hashtags and posts insights in one page which wil give them more organization.
 
 **The Hashtag Page**<br/>
-As mentioned above, the goal for this project is to make instagram influencers have a better organization of their current posts and also their future posts. In this page, the users will be able to search hashtags and also store their hashtags in their "hashtag bag". 
+As mentioned above, the goal for this project is to make instagram influencers have a better organization of their current posts and also their future posts. In this page, the users will be able to search hashtags and also store their hashtags in their "hashtag bag". This will make the instagram influencer's life more comfortable because they will be able to **get every information they want to insert in their posts by just opening our application.**
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
