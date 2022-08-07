@@ -19,7 +19,7 @@ Hence, I am going to use **HTML, CSS, JQUERY, PHP, and MySQL** in order to build
 
 **The Index Page**<br/>
 First I made the first log in page using PHP by using the design made previously. For in order for the log-in, we are going to use the OAUTH from Facebook because instagram is from Facebook, currently called Meta. The next few days, I am going to be studying of how to make the log in connection correctly by using Facebook. In order to study this I am using the following link: <br/>
-https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
+>https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
 
 **The Caption Page**<br/>
 The next page that I made was the caption page where the users will be able to save their captions. The reason why I made this was because people save their captions in their notes. In this page, users will be able to save and delete their captions before and after using it. This way, they will be able to have their captions, hashtags and posts insights in one page which wil give them more organization.
