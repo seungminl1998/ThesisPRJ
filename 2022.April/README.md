@@ -28,5 +28,5 @@ The next page that I made was the caption page where the users will be able to s
 As mentioned above, the goal for this project is to make instagram influencers have a better organization of their current posts and also their future posts. In this page, the users will be able to search hashtags and also store their hashtags in their "hashtag bag". 
 
 **The Posts Page**<br/>
-The next page that I made was the caption post page where the users get to see their 
+The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the
 
