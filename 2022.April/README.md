@@ -33,3 +33,4 @@ As mentioned above, the goal for this project is to make instagram influencers h
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
 
+Users will be able to 
