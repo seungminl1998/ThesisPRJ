@@ -35,3 +35,5 @@ The next page that I made was the post page where the users get to see their pos
 
 Users will be able to move to each page by using the common menu in the top of the page. The menu will be composed of three pages.
   1. Posts Page
+  2. Hashtag Page
+  3. Caption Page
