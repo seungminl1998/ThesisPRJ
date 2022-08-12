@@ -13,4 +13,4 @@ I registered to a hosting service with linux light in order to get to use a data
    - **CSS**<br>
    - **PHP**<br>
 
-Moreover, in order to be able to get the instagram post insights, I bought the s
+Moreover, in order to be able to get the instagram post insights, I bought the SSL Security 
