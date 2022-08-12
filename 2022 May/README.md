@@ -5,8 +5,8 @@ I am making the front end and the back end of the <b>Application InSEO</b>.
 
 <img width="503" alt="Screen Shot 2022-08-12 at 10 32 29 AM" src="https://user-images.githubusercontent.com/101083759/184268885-c6f799b1-e598-43ba-927e-1a51a88df645.png">
 
-I registered to a hosting service with linux light in order to get to use a database (MySQL) and also to use PHP to connect to the server. For a reminder in this project I am using the following languages:
-    1. HTML
-    2. JAVASCRIPT (JQUERY)
-    3. CSS
-    4. PHP
+I registered to a hosting service with linux light in order to get to use a database (MySQL) and also to use PHP to connect to the server. For a reminder in this project I am using the following languages:<br>
+**    1. HTML<br>
+    2. JAVASCRIPT (JQUERY)<br>
+    3. CSS<br>
+    4. PHP<br>**
