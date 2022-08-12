@@ -5,4 +5,4 @@ I am making the front end and the back end of the <b>Application InSEO</b>.
 
 <img width="503" alt="Screen Shot 2022-08-12 at 10 32 29 AM" src="https://user-images.githubusercontent.com/101083759/184268885-c6f799b1-e598-43ba-927e-1a51a88df645.png">
 
-I registered to a hosting service with linux light in order to get to use a database (MySQL)
+I registered to a hosting service with linux light in order to get to use a database (MySQL) and also to use PHP to connect to the server. 
