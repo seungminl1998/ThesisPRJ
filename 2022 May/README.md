@@ -10,7 +10,7 @@ I am making the front end and the back end of the <b>Application InSEO</b>.
 I registered to a hosting service with linux light in order to get to use a database (MySQL) and also to use PHP to connect to the server. For a reminder in this project I am using the following languages:<br>
    - **HTML**<br>
    - **JAVASCRIPT (JQUERY)**<br>
-   - **CSS**<br>
+   - **CSS**<br
    - **PHP**<br>
 
 Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the Instagram Graph API which is the API needed to get the post insights. 
