@@ -16,4 +16,4 @@ I registered to a hosting service with linux light in order to get to use a data
 Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the Instagram Graph API which is the API needed to get the post insights. 
 <img width="430" alt="Screen Shot 2022-08-13 at 8 18 42 AM" src="https://user-images.githubusercontent.com/101083759/184456058-1bb5c2fc-9291-4f6c-af84-657109159a7f.png">
 
-s
+
