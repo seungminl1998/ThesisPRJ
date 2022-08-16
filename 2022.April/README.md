@@ -21,7 +21,7 @@ Hence, I am going to use **HTML, CSS, JQUERY, PHP, and MySQL** in order to build
 > 1. Avenir (Avenir Black, Avenir Italic, Avenir Roman, Avenir Book) 2. Stein
 
 **The Index Page**<br/>
-First I made the first log in page using PHP by using the design made previously. For in order for the log-in, we are going to use the OAUTH from Facebook because instagram is from Facebook, currently called Meta. The next few days, I am going to be studying of how to make the log in connection correctly by using Facebook. In order to study this I am using the following link: <br/>
+First I made the login page using PHP by using the design made previously. For in order for the log-in, we are going to use the OAUTH from Facebook because instagram is from Facebook, currently called Meta. The next few days, I am going to be studying of how to make the log in connection correctly by using Facebook. In order to study this I am using the following link: <br/>
 >https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
 
 **The Caption Page**<br/>
