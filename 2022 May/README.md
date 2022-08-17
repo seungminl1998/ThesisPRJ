@@ -33,5 +33,5 @@ This can be done after I grant access to the application to get data from my Ins
 After getting all the data from Instagram and Facebook, I use the previously designed page and fill in the data. The next step for this page is to make the popup screen and make the user be able to check the insights of each post. 
 
 <h3>Hashtags Page</h3>
-The Hashtags Page is the third page that the users will see when the Hashtag menu is clicked which is in the top part of the web application. Inside the hashtags page, the users will be able to search 
+The Hashtags Page is the third page that the users will see when the Hashtag menu is clicked which is in the top part of the web application. Inside the hashtags page, the users will be able to search for keywords. This is not yet implemented in this month's version. I will be using an API for this function too. When the tag bag button is clicked, which is next to the search bar, the users will see their hashtags saved and grouped according to its post. This bag will be used to help users plan their future posts. 
  
