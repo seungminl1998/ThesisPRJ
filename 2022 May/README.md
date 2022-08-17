@@ -21,9 +21,11 @@ The Index Page is the first page that the users will see when the type in the do
 However, I am currently having some problems on making the Facebook Login work. It shows an error when the start button is clicked. I still could not find the problem hence I decided to continue working on other pages.
 
 <h3>Posts Page</h3>
-The Posts Page is the second page that the users will see after logging in using Facebook. 
+The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
    - **Instagram ID**<br>
    - **Number of Followers**<br>
    - **Number of Followings**<br>
    - **Number of Posts**<br>
-   - **Insights of each Post**
+   - **Insights of each Post**<br>
+Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the Instagram Graph API which is the API needed to get the post insights. 
+
