@@ -27,5 +27,5 @@ The Posts Page is the second page that the users will see after logging in using
    - **Number of Followings**<br>
    - **Number of Posts**<br>
    - **Insights of each Post**<br>
-Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the Instagram Graph API which is the API needed to get the post insights. 
+Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the **Instagram Graph** API which is the API needed to get the post insights. 
 
