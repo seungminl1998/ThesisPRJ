@@ -27,4 +27,4 @@ The Posts Page is the second page that the users will see after logging in using
    - **Number of Followings**<br>
    - **Number of Posts**<br>
    - **Insights of each Post**<br>
-This can be done after I grant access to the application to get data from my Instagram Account. This is done in the facebook developers page. 
+This can be done after I grant access to the application to get data from my Instagram Account. This is done in the facebook developers page.
