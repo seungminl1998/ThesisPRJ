@@ -29,4 +29,7 @@ The Posts Page is the second page that the users will see after logging in using
    - **Insights of each Post**<br>
 This can be done after I grant access to the application to get data from my Instagram Account. This is done in the facebook developers page. Before this, in order to get the data correctly, I need to correctly fill in the data in the defines file. The explanation about the defines file will be done later on.
 After getting all the data from Instagram and Facebook, I use the previously designed page and fill in the data. The next step for this page is to make the popup screen and make the user be able to check the insights of each post. 
+
+<h3>Hashtag Page</h3>
+
  
