@@ -30,4 +30,4 @@ This is the data used in YouTube in order to tell if it is a good content or not
         
 The project's progress will be written in the **README.md** file in each month with its corresponding source codes.
 
->By. Seungmin Lee with Student ID. 2016314869
+>By. Seungmin Lee with Student ID. 2016******
