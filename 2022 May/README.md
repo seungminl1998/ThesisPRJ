@@ -21,7 +21,7 @@ The Index Page is the first page that the users will see when the type in the do
 However, I am currently having some problems on making the Facebook Login work. It shows an error when the start button is clicked. I still could not find the problem hence I decided to continue working on other pages.
 
 <h3>Posts Page</h3>
-The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:
+The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
 
    - **Instagram ID**
    - **Number of Followers**
