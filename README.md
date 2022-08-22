@@ -7,6 +7,10 @@ By the ends of this project, the web application will be able to grade the posts
 If this application is presented to the market, the Instagram Influencers will be able to have a better experience when uploading their instagram posts. 
 It will be easier for them to manage their post and profile and they will also be able to see their profile grade which will make them easier to know how well they are doing.
 
+<h2>Business Model for InSEO</h2>
+
+Social Media is and will be a big part of people’s life because it is what builds communities and connects people from all around the world. This started to spread in 2008 when Facebook came to life and marked the start of the growth of the social media platforms.
+
 <h2>The Needs</h2>
 
 Social Media is and will be a big part of people’s life because it is what builds communities and connects people from all around the world. This started to spread in 2008 when Facebook came to life and marked the start of the growth of the social media platforms.
