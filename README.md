@@ -22,7 +22,7 @@ Nowadays, children’s one of the top dream job is to be a “Creator”. This i
 - retention rate
 - click-through rate
 - subscription rate
-- number of impressions.<br>
+- number of impressions.<br>s
 
 This is the data used in YouTube in order to tell if it is a good content or not. However, this is not the same for every social media platform as YouTube is a video based content platform but Instagram is a picture based content platform. Instagram creators use the following datas in order to check if the content is good or not:<br>
 - likes follower ratio
