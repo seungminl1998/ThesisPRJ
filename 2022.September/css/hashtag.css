@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "avenir";
+  src: url("fonts/AvenirLTStd-Book.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "avenirB";
+  src: url("fonts/AvenirLTStd-Black.otf");
+  font-style: bold;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "avenirI";
+  src: url("fonts/AvenirLTStd-Roman.otf");
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "stein";
+  src: url("fonts/Steinfeld DEMO.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+p{
+  margin: 0;
+}
+#grad{
+  margin-top:30px;
+}
+#insta{
+  grid-row: 1/2;
+  margin-top: 5px;
+  font-size: 30px;
+}
+body{
+  background-color: #fff;
+}
+#top{
+  background-color: #374785;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#bottom{
+  background-color: #374785;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+}
+#topDesc{
+  font-family: "avenirB";
+  color:white;
+  text-align: center;
+  margin-top: 10px;
+}
+.title{
+  font-family: "stein";
+  font-size:30px;
+  font-weight:200;
+  letter-spacing:1px;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+}
+.description{
+  font-family: "avenirI";
+  margin-top: -15px;
+  font-weight:200;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+}
+#container{
+  width: 100%;
+  margin-top:50px;
+  height: 660px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 0;
+}
+#topleft{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  font-family: "stein";
+  font-size: 50px;
+  text-align: center;
+  font-style:bold;
+}
+#topContainer{
+  grid-row:2/3;
+  grid-column: 2/4;
+  display: grid;
+  font-family: "avenir";
+  font-size: 13px;
+}
+#left{
+  font-size:30px;
+  line-height: 80px;
+color:#374785;
+}
+#right{
+  margin-top: 8px;
+  line-height: 20px;
+}
+#theinfo{
+  grid-row:1/2;
+grid-column:1/4;
+  display: flex;
+  justify-content: space-around;
+}
+#menu{
+  grid-row:2/3;
+grid-column: 1/4;
+  height: 29px;
+  text-align: center;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "avenirB";
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+border-radius:10px;
+box-shadow: 1px 1px 8px #374785;
+color:#374785;
+
+}
+#hme{
+width:173px;
+  line-height: 29px;
+}
+#hash{
+width:173px;
+  line-height:29px;
+
+}
+
+#caption{
+width:173px;
+  line-height:29px;
+}
+.dash{
+  line-height: 29px;
+}
+#bodyContainer{
+  font-family: "avenirB";
+  grid-row:4/30;
+  grid-column:2/4;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#bodyContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#whiteicon{
+  width: 15px;
+}
+
+
+
+.cops{
+  border:none;
+  background: white;
+  font-family: "avenir";
+}
+.cops1{
+  border:none;
+  background: green;
+  font-family: "avenir";
+}
+.cops2{
+  border:none;
+  background: red;
+  font-family: "avenir";
+}
+#home{
+  border:none;
+  background-color: #fff;
+color:#717374;
+    font-weight: 600;
+}
+#home:hover{
+color: #374785;
+
+}
+#hashtag{
+  border:none;
+  background-color: #fff;
+    font-weight: 600;
+color:#374785;
+}
+#hashtag:hover{
+color: #374785;
+
+}
+#captionB{
+  border:none;
+  background-color: #fff;
+color:#717374;
+    font-weight: 600;
+}
+#captionB:hover{
+color: #374785;
+
+}
+
+.tageo::-webkit-scrollbar {
+  display: none;
+}
+
