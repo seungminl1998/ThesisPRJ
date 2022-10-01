@@ -21,7 +21,10 @@ Here, when talking about metadata, there are the following information:
 
 <h2>Result of Related Projects</h2>
 The most important metadata in order to make the algorithm understand the video is the video tags. In order to search for tags I needed to go to internet, pay for an application that recommended me for tags, and then insert them into my video metadata. <br><br> However, an application called TubeBuddy came out and everything got much more easy which also made my videos go better. TubeBuddy is an application that recommended tags for the video and also shows the video creator the grade of the video itself. Moreover, after showing the grade, TubeBuddy also recommends us what we should do in order to improve the video. This helped me a lot and I thought why there was nothing like this for instagram influencers. <br> 
->There is TubeBuddy for YouTube influencers, but they were none for Instagram Influencers. I use both platforms hence, I decided to make one for Instagram Influencers which is the current thesis project, Instagram Search Engine Optimization (InSEO).
+      
+      There is TubeBuddy for YouTube influencers, but they were none for Instagram Influencers. <br><br>
+       
+ I use both platforms hence, I decided to make one for Instagram Influencers which is the current thesis project, Instagram Search Engine Optimization (InSEO).
 InSEO is a need for the market because people also earn and make a living being an instagram influencer. Reaching out the correct audience could help them increase their popularity and moreover, make users get more engaged in the platform itsel which would make the instagram algorithm promote more posts of the corresponding user. I also find it difficult to search for trending hashtags, and it is difficult for me to analyze how good are the metadatas of my instagram post. This is what InSEO does for the users.
 
 <h2>Business Model for InSEO</h2>
