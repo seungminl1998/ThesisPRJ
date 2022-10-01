@@ -132,15 +132,11 @@ Users will be able to move to each page by using the common menu in the top of t
   3. Caption Page
 The code below shows the code for the menu.
 ```HTML
-      <div id = "bodyContainer">
-        <div id = "posts">
-          <div class = "thep">
-            <img class="imgs" src = "assets/test1.jpg">
-            <div class = "hov">
-              <p class = "thegradeP">Post Grade:</p>
-              <p class = "pGrade">B</p>
-            </div>
-          </div>
+<div id = "menu">
+          <div id ="hme"><button id = "home">HOME</button></div>
+          <div class = "dash">|</div>
+          <div id = "hash"><button id = "hashtag">HASHTAG SEARCH</button></div>
+          <div class = "dash">|</div>
+          <div id = "caption"><button id = "captionB">CAPTION BANK</button></div>
         </div>
-      </div>
 ```
