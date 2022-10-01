@@ -25,10 +25,11 @@ First I made the login page using PHP by using the design made previously. For t
 >https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
 
 The index page starts with a header which contains the text "SKKU THESIS PROJECT". Then, it has the body which contains the name of the project and a short description with a start button. Lastly, it has a footer with the name of the project. When the user clicks start, the page will go to the posts page. The following code is used to make this happen:
-```
+```PHP
       <?php echo '<a id = "button" href="' . $loginUrl . '">
             START
         </a>';?>
+ ```
 
 **The Caption Page**<br/>
 The next page that I made was the caption page where the users will be able to save their captions. The reason why I made this was because people save their captions in their notes. In this page, users will be able to save and delete their captions before and after using it. This way, they will be able to have their captions, hashtags and posts insights in one page which wil give them more organization.
