@@ -14,7 +14,7 @@ It will be easier for them to manage their post and profile and they will also b
 | SSL  | ₩ 48,000  |
 | Hosting Service  | ₩ 160,000  |
 | Hashtag API  | ₩ 7,000 per Month  |
-| Total  | ₩ 242,000  |
+| **TOTAL**  | **₩ 242,000**  |
 
 <h2>Reason of Project</h2>
 
