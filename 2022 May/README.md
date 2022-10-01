@@ -99,5 +99,50 @@ The Posts Page is the second page that the users will see after logging in using
 This can be done after I grant access to the application to get data from my Instagram Account. This is done in the facebook developers page. Before this, in order to get the data correctly, I need to correctly fill in the data in the defines file. The explanation about the defines file will be done later on.
 After getting all the data from Instagram and Facebook, I use the previously designed page and fill in the data. The next step for this page is to make the popup screen and make the user be able to check the insights of each post. 
 
+```php
+<?php
+	include 'defines.php';
+
+	// instagram endpoint structure
+	$endpointFormat = 'https://graph.facebook.com/v13.0/{ig-user-id}?fields=business_discovery.username({ig-username}){username,website,name,ig_id,id,profile_picture_url,biography,follows_count,followers_count,media_count,media{id,caption,like_count,comments_count,timestamp,username,media_product_type,media_type,owner,permalink,media_url,children{media_url}}}&access_token={access-token}';
+
+	// instagram endpoint with actuall account id
+	$endpoint =  'https://graph.facebook.com/v13.0/' . $instagramAccountId;
+
+	// user to get
+	$users = array();
+
+	// get user info and posts
+	$users[] = getUserInfoAndPosts( 'thealexleee', $endpoint, $accessToken );
+
+	function getUserInfoAndPosts( $username, $endpoint, $accessToken ) {
+		// endpoint params
+		$igParams = array(
+			'fields' => 'business_discovery.username(' . $username . '){username,website,name,ig_id,id,profile_picture_url,biography,follows_count,followers_count,media_count,media{id,caption,like_count,comments_count,timestamp,username,media_product_type,media_type,owner,permalink,media_url,children{media_url}}}',
+			'access_token' => $accessToken
+		);
+
+		// add params to endpoint
+		$endpoint .= '?' . http_build_query( $igParams );
+
+		// setup curl
+		$ch = curl_init();
+		curl_setopt( $ch, CURLOPT_URL, $endpoint );
+		curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 2 );
+		curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, true );
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+
+		// make call and get response
+		$response = curl_exec( $ch );
+
+		// close curl call
+		curl_close( $ch );
+
+		// return nice array
+		return json_decode( $response, true );
+	}
+?>
+```
+
 <h3>Hashtags Page</h3>
 The Hashtags Page is the third page that the users will see when the Hashtag menu is clicked which is in the top part of the web application. Inside the hashtags page, the users will be able to search for keywords. This is not yet implemented in this month's version. I will be using an API for this function too. When the tag bag button is clicked, which is next to the search bar, the users will see their hashtags saved and grouped according to its post. This bag will be used to help users plan their future posts. 
