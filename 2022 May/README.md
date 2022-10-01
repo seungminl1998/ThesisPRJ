@@ -88,7 +88,7 @@ However, I am currently having some problems on making the Facebook Login work. 
     }
     ?>
  ```
-
+The code above is the code use to establish the Facebook OAUTH. 
 
 <h3>Posts Page</h3>
 The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
