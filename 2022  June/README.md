@@ -162,6 +162,6 @@ The code above was explained in the previous version. However, in this version t
 				$('div[name="'+name+'"]').fadeOut(400);
 				grey.fadeOut(400);
 			}
-	</script>
+</script>
 ```
-The function is made using Javascript, JQUERY. 
+The function is made using Javascript, JQUERY. When the page loads, it will hide the divs with class = "moreInfo". These are the divs that contains the meta-data and analyzation of all the fetched posts. This is why the page loads slowly. All the process is done when the page loads and it hides it until the user clicks a post. Then it can be seen that there is a grey constant. This is the grey background that will show when the pop-up comes up. Then below it can be seen that a variable is initialized. This variable is used to contain the id of the clicked div which is the name of the div of the pop-up that the function needs to show. This will be better understood if we look at th function.  
