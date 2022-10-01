@@ -3,3 +3,54 @@ In this month's update, I made a lot of changes and added a lot of features. Fir
 
 <h3>Index Page</h3>
 The index page is the page that the users will see first. It is where the users can click the button start with facebook in order to call the Facebook OAUTH. 
+
+```php
+<?php
+    include 'defines.php';
+    require_once __DIR__ . '/vendor/autoload.php';
+
+    $creds = array(
+        'app_id' => FACEBOOK_APP_ID,
+        'app_secret' => FACEBOOK_APP_SECRET,
+        'default_graph_version' => 'v13.0',
+        'persistent_data_handler' => 'session'
+    );
+
+    $facebook = new Facebook\Facebook( $creds );
+    $helper = $facebook->getRedirectLoginHelper();
+    $oAuth2Client = $facebook->getOAuth2Client();
+
+    if ( isset( $_GET['code'] ) ) {
+        try {
+            $accessToken = $helper->getAccessToken();
+        } catch ( Facebook\Exceptions\FacebookResponseException $e ) {
+          header("Location: https://www.inseo.co.kr/inseo/getPosts.php");
+          exit();
+        } catch ( Facebook\Exceptions\FacebookSDKException $e ) {
+          header("Location: https://www.inseo.co.kr/inseo/getPosts.php");
+          exit();
+        }
+
+        if ( !$accessToken->isLongLived() ) {
+            try {
+                $accessToken = $oAuth2Client->getLongLivedAccessToken( $accessToken );
+            } catch ( Facebook\Exceptions\FacebookSDKException $e ) {
+                echo 'Error getting long lived access token ' . $e->getMessage();
+            }
+        }
+
+        echo '<pre>';
+        var_dump( $accessToken );
+
+        $accessToken = (string) $accessToken;
+    } else {
+        $permissions = [
+            'public_profile',
+            'instagram_basic',
+            'pages_show_list',
+        ];
+        $loginUrl = $helper->getLoginUrl( FACEBOOK_REDIRECT_URI, $permissions );
+
+    }
+    ?>
+```
