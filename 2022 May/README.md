@@ -170,4 +170,4 @@ The code above is the code used to get fetch the posts datas. Moreover, by using
 	</div>
 ```
 The code above shows how we fetch the data from the JSON produced above. Since we are trying to get the data for the posts, we get the "media" JSON data. As it can be seen, the image source would be the media URL and it is called with the data that is within the JSON. In order to get all the images, we use the for loop. This way we can get all the datas for each post.
-One important point to remember here is that we will not be getting the Video posts from instagram. This is because 
+One important point to remember here is that we will not be getting the Video posts from instagram. As it can be seen we are checking the media type. If the media type is equal to Video, the program will not produce any <img> tag. In other words, it is jumping the videos. Moreover, if the post has various images in it, we will just get the first picture. I did this because if we try to get the videos as well as child images, the page would take too long to load which would be bad for the users. 
