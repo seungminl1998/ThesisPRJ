@@ -41,6 +41,16 @@
             'public_profile',
             'instagram_basic',
             'pages_show_list',
+            'public_profile',
+            'instagram_basic',
+            'pages_show_list',
+            'instagram_manage_insights', 
+            'instagram_manage_comments', 
+            'manage_pages',
+            'ads_management', 
+            'business_management', 
+            'instagram_content_publish', 
+            'pages_read_engagement'
         ];
         $loginUrl = $helper->getLoginUrl( FACEBOOK_REDIRECT_URI, $permissions );
 
