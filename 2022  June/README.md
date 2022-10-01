@@ -182,6 +182,9 @@ The function that is below the clickHandler function, the clickHandlers function
 	<div class = "moreInfo" name = "<?php echo $y; ?>">
 	<div class = "theTop">----- Inseo -----</div>
 	<div class = "outClose"><button class = "close" id = "b<?php echo $y++; ?>" onclick="clickHandlers(event)">x</button></div>
+```
+	
+```php
     <div class="pages-list-item">
 		<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
 		<?php else : ?>
@@ -211,6 +214,10 @@ The function that is below the clickHandler function, the clickHandlers function
 			?>
 			</div>
 		</div>
+```
+	    
+
+```html
 		<button class = "linkss" onclick="window.open('<?php echo $media['permalink']; ?>')">
 			<h4 class = "titles"> Link To Post </h4>
 		</button>
@@ -275,8 +282,11 @@ The function that is below the clickHandler function, the clickHandlers function
 						</div>
 								</div>
 				<?php endforeach; ?>
-								</div>
+			</div>
+```
+	   
 
+```html
 	  <div class = "calculations">
 	 		<?php
 				$like2follower = $likes/$followers;
@@ -327,6 +337,9 @@ The function that is below the clickHandler function, the clickHandlers function
 			?>
 			</div>
 		</div>
+```
+	    
+```html
 		<div class = "contentG">
 			<div class = "recom">Content Grade </div>
 			<div class = "grade">
