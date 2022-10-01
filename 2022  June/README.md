@@ -104,7 +104,28 @@ The posts page is the page where the users will be able to see all their posts a
 - number of followings
 - number of posts<br>
 
-Then, in the middle there will be a menu that the users will use to navigate. Then below it, the body of the page will be present. The body will have the posts of the users.
+```html
+	  <div id = "topContainer">
+	  <?php foreach ( $users as $userInfo ) : ?>
+        <div id ="theinfo">
+          <div id = "left"><b>@<?php echo $userInfo['business_discovery']['username']; ?></b> </div>
+          <div id = "right">
+            <div id = "data1"><b>Number of Followers: <?php $followers =  $userInfo['business_discovery']['followers_count']; echo $userInfo['business_discovery']['followers_count']; ?></b>  </div>
+            <div id = "data2"><b>Number of Following: <?php echo $userInfo['business_discovery']['follows_count']; ?></b></div>
+            <div id = "data3"><b>Number of Posts: <?php echo $userInfo['business_discovery']['media_count']; ?></b></div>
+          </div>
+        </div>
+		<div id = "menu">
+          <div id ="hme"><button id = "home">HOME</button></div>
+          <div class = "dash">|</div>
+          <div id = "hash"><button id = "hashtag">HASHTAG SEARCH</button></div>
+          <div class = "dash">|</div>
+          <div id = "caption"><button id = "captionB">CAPTION BANK</button></div>
+        </div>
+	  </div>
+```
+This is the code how I fetched the logged in user's data. As it can be seen in the code, using PHP, I run a for loop. This for loop is to get through the children of a JSON value. We will go through the values inside the JSON variable userInfo which contains the user's Instagram Username, followers, followings and number of posts.
+Then, in the middle there will be a menu that the users will use to navigate. This can be also seen in the code. The name of the <div> containing the menu has id = "menu". Then below it, the body of the page will be present. The body will have the posts of the users.
 > One important point to remember here is that the Instagram API will only fetch 20 posts. This is the hard limit of the API. However it does not matter because posts that are old, even though they are optimized, it has a low chance of it being picked up by the instagram algorithm.
 
 In the past version we could see how the media datas were brought as a JSON. The below code shows how the JSON is used to show the user the data.
