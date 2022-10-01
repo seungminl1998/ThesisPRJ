@@ -69,4 +69,4 @@ First, as it can be seen, we are also calling the vendor directory. This was not
         <span class="button-text"><b>Start</b> with Facebook</span>
       </button>
 ```
-The code above shows the button that takes the user to the Facebook OAUTH. It is a button with an animation. This was made with CSS. The animation moves the arrow to the right when the user hovers the mouse over the button.
+The code above shows the button that takes the user to the Facebook OAUTH. It is a button with an animation. This was made with CSS. The animation moves the arrow to the right when the user hovers the mouse over the button. When the user clicks the button, it will right away take the user to the facebook login screen. If it is the first time for the user, it will also ask for the permissions. However, if it is not their first time logging in to the application, then, it will right away ask if to continue with the current login state and if the user agrees, it will take them to the getPosts page which is the page that shows the user's posts. 
