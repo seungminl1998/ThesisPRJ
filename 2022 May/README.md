@@ -159,6 +159,7 @@ The code above is the code used to get fetch the posts datas. Moreover, by using
 		<?php endforeach; ?>
 	</div>
 ```
+The code above shows how we fetch the data from the JSON produced above. Since we are trying to get the data for the posts, we get the "media" JSON data. 
 
 <h3>Hashtags Page</h3>
 The Hashtags Page is the third page that the users will see when the Hashtag menu is clicked which is in the top part of the web application. Inside the hashtags page, the users will be able to search for keywords. This is not yet implemented in this month's version. I will be using an API for this function too. When the tag bag button is clicked, which is next to the search bar, the users will see their hashtags saved and grouped according to its post. This bag will be used to help users plan their future posts. 
