@@ -145,5 +145,20 @@ After getting all the data from Instagram and Facebook, I use the previously des
 ```
 The code above is the code used to get fetch the posts datas. Moreover, by using the code above we get the user's data. In the igParams, we can see a list of parameters that we are getting. There we call all the data including the users data and also their posts. This would return a JSON in the end. The JSON would be use to call the elements later on within the body in order to build the page and fill it with the logged in user data. 
 
+```html
+			<div id = "posts">
+				<?php foreach ( $userInfo['business_discovery']['media']['data'] as $media ) : ?>
+					<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
+					<?php else : ?>
+						<div class = "thep">
+							<?php if ( 'IMAGE' == $media['media_type'] || 'CAROUSEL_ALBUM' == $media['media_type']) : ?>
+								<img class="imgs" src="<?php echo $media['media_url']; ?>" />
+							<?php endif; ?>
+						</div>
+					<?php endif; ?>
+				<?php endforeach; ?>
+			</div>
+```
+
 <h3>Hashtags Page</h3>
 The Hashtags Page is the third page that the users will see when the Hashtag menu is clicked which is in the top part of the web application. Inside the hashtags page, the users will be able to search for keywords. This is not yet implemented in this month's version. I will be using an API for this function too. When the tag bag button is clicked, which is next to the search bar, the users will see their hashtags saved and grouped according to its post. This bag will be used to help users plan their future posts. 
