@@ -92,7 +92,7 @@ The code above is the code use to establish the Facebook OAUTH. In order to make
             Login With Facebook
         </a>';
  ```
- As
+ As it can be seen in the code above, by using PHP we produce an <a> tag which corresponds to links in html. We create a link directed to the login URL with a text "Login with Facebook". 
 <h3>Posts Page</h3>
 The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
 
