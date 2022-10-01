@@ -1,8 +1,4 @@
 <?php
-    include 'defines.php';
-
-    // load graph-sdk files
-    require_once __DIR__ . '/vendor/autoload.php';
 
     // facebook credentials array
     $creds = array(
