@@ -8,10 +8,13 @@ If this application is presented to the market, the Instagram Influencers will b
 It will be easier for them to manage their post and profile and they will also be able to see their profile grade which will make them easier to know how well they are doing.
 <h2>Amount of money used in Project</h2>
 
-| First Header  | Second Header |
+| ITEM | COST |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Domain  | ₩ 20,000  |
+| SSL  | ₩ 48,000  |
+| Hosting Service  | ₩ 160,000  |
+| Hashtag API  | ₩ 7,000 per Month  |
+| Total  | ₩ 242,000  |
 
 <h2>Reason of Project</h2>
 
