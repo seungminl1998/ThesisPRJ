@@ -3,5 +3,3 @@ In this month's update, I made a lot of changes and added a lot of features. Fir
 
 <h3>Index Page</h3>
 The index page is the page that the users will see first. It is where the users can click the button start with facebook in order to call the Facebook OAUTH. 
-
-I made the buy and login function. 
