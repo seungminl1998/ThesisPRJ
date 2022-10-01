@@ -105,7 +105,7 @@ The code above is the code use to establish the Facebook OAUTH. In order to make
 	?>
 ```
 
-The access token is found in the developers page.
+The access token is found in the developers page. The access token from the developers page is then copied to the defines.php file which is going to be used throughout all the project. The Facebook ID is also needed which is given after I create a facebook developers account. This also goes the same for the app secret. The facebook redirect uri is where the Facebook OAUTH will be called. Since this is needed throughout all the project, I decided to create a defines page separately. 
 
  ```php
         echo '<a href="' . $loginUrl . '">
