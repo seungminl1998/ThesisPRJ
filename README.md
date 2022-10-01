@@ -10,7 +10,12 @@ It will be easier for them to manage their post and profile and they will also b
 <h2>Business Model for InSEO</h2>
 
 Social Media is and will be a big part of people’s life because it is what builds communities and connects people from all around the world. This started to spread in 2008 when Facebook came to life and marked the start of the growth of the social media platforms.
+![Untitled-2](https://user-images.githubusercontent.com/101083759/193397081-9de38f40-2d33-4c93-93bc-e40f21108c7e.png)
+When making this application, my main goal was to make a business out of it. Hence, I invested on the project as explained above and made a business plan. The image below shows the business plan of this project InSEO.
 
+The box in the middle which says InSEO is our web application. The box that is left to it which contains “Facebook Graph API” is the back end API used to fetch the connected user’s posts and data. Lastly, the user box that is to the far right is our customer and our main income stream.
+
+First, the users will enter to our web application and buy the product. The users will pay a monthly ₩3,000 to use the application. This is because InSEO is also using money for the APIs in order to provide a better service to instagram influencers. After they buy the product, InSEO will register the user in the Facebook Graph API and we will give the customer the access token in order for them to be able to register. Hence, our main income stream would be the monthly subscription of the instagram influencers in order to use the service.
 <h2>The Needs</h2>
 
 Social Media is and will be a big part of people’s life because it is what builds communities and connects people from all around the world. This started to spread in 2008 when Facebook came to life and marked the start of the growth of the social media platforms.
