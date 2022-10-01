@@ -187,7 +187,15 @@ Now, I will be explaining how the pop-up boxes were created and how I made them 
 ```
 The code above is the first chunk. As it can be seen, in the first line of the PHP code, there are many variables. 
 - $x variable is used to mark down the actual posts div that the users see when the page loads.
-- $y variable
+- $y variable is used to mark down the pop up boxes.
+- $followers variable is used to contain the number of followers.
+- $comments variable is used to contain the number of comments of a post.
+- $impression variable is used to contain the number of impressions of a post.
+- $reached variable is used to contain the number of reached of a post.
+- $interaction variable is used to contain the number of interactions of a post.
+- $saved variable is used to contain the number of people who saved the corresponding post.
+		
+The first two variables are going to be used to point at each other. 
 
 ```php
     <div class="pages-list-item">
