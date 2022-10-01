@@ -69,5 +69,4 @@ First, as it can be seen, we are also calling the vendor directory. This was not
         <span class="button-text"><b>Start</b> with Facebook</span>
       </button>
 ```
-
-      
+The code above shows the button that takes the user to the Facebook OAUTH. It is a button with an animation. This was made with CSS. The animation moves the arrow to the right when the user hovers the mouse over the button.
