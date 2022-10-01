@@ -97,9 +97,12 @@ The code above shows the button that takes the user to the Facebook OAUTH. It is
 In order for this to work, I need to pre-register my access token, the page id and the instagram business account id in the defines file. This is needed because the application is not public for the users. Meaning that only I can use the application. If any other user tries to log in with their Facebook account, they won't be able to get the posts nor any other data because they do not have their acces token and any other data. Hence is the reason why I am the only tester for now. I am currently finding a way so that many users can register and use the app.
 
 <h3>Posts Page</h3>
-The posts page is the page where the users will be able to see all their posts and also its data. This page can be only reached when the user is authenticated. The users will see the general information of their instagram account. Meaning that they will see their:
+The posts page is the page where the users will be able to see all their posts and also its data. This page can be only reached when the user is authenticated. The users will see the general information of their instagram account. They will seeing the following datas above:
 
 - instagram ID
 - number of followers 
 - number of followings
 - number of posts<br>
+
+Then, in the middle there will be a menu that the users will use to navigate. Then below it, the body of the page will be present. The body will have the posts of the users.
+> One important point to remember here is that the Instagram API will only fetch 20 posts. This is the hard limit of the API. However it does not matter because posts 
