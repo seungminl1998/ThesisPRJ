@@ -130,4 +130,18 @@ Then, in the middle there will be a menu that the users will use to navigate. Th
 
 In the past version we could see how the media datas were brought as a JSON. The below code shows how the JSON is used to show the user the data.
 
+```html
+<div id = "bodyContainer">
+	<div id = "posts">
+		<?php foreach ( $userInfo['business_discovery']['media']['data'] as $media ) : ?>
+			<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
+			<?php else : ?>
+				<div class = "thep" onclick="clickHandler(event)">
+					<?php if ( 'IMAGE' == $media['media_type'] || 'CAROUSEL_ALBUM' == $media['media_type']) : ?>
+						<img class="imgs" id = "<?php echo $x++; ?>" src="<?php echo $media['media_url']; ?>" />
+					<?php endif; ?>
+				</div>
+			<?php endif; ?>
+		<?php endforeach; ?>
+</div>
 ```
