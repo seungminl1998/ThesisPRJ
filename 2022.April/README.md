@@ -58,6 +58,53 @@ As mentioned above, the goal for this project is to make instagram influencers h
           </form>
         </div>
 ```
+```HTML
+ <div id = "tagsInfo">
+        <div id = "exTitle">
+          <input type="text" placeholder="Write the Tag to add" id = "tagAd"></input>
+          <button id = "plus" disabled = "disabled">add</button>
+          <button id = "cerrar">close</button>
+        </div>
+        <div id = "tageo">
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#dfsdfS</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+          <p class = "oneMore">#ello</p>
+        </div>
+      </div>
+```
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
