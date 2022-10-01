@@ -107,7 +107,7 @@ This is the skeleton code that will be used to show the users the tag lists that
         </div>
       </div>
 ```
-As mentioned above, the user will click the group of tags that they want to open. When the div is clicked, the code above will start to show. The reason why it is filled of a random text is because this is just a skeleton code. In the future, the values will be brought from the database. Moreover, as it can be seen above, there is a form once again. This form will be use to update the database for hashtags saved. The users will be able to add hashtags in each hashtag group. The hashtag that is saved will be saved and 
+As mentioned above, the user will click the group of tags that they want to open. When the div is clicked, the code above will start to show. The reason why it is filled of a random text is because this is just a skeleton code. In the future, the values will be brought from the database. Moreover, as it can be seen above, there is a form once again. This form will be use to update the database for hashtags saved. The users will be able to add hashtags in each hashtag group. The hashtag that is saved will be saved and will be presented to the user using a <p> tag with class oneMore. 
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
