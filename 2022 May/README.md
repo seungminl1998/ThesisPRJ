@@ -87,6 +87,12 @@ However, I am currently having some problems on making the Facebook Login work. 
  ```
 The code above is the code use to establish the Facebook OAUTH. In order to make the OAUTH work, I got the access token and the extra data and put it in the defines file. The define file contains the extension data in order for the Facebook OAUTH work. Then, when it is the user's first time logging in with Facebook, we need to ask the permissionns. As it can be seen in the code above, there is a permission section. Those are the permissions needed in order for the Facebook API work. Without those permissions, InSEO won't be able to fetch the data and nothing would work.
 
+ ```php
+        echo '<a href="' . $loginUrl . '">
+            Login With Facebook
+        </a>';
+ ```
+ As
 <h3>Posts Page</h3>
 The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
 
