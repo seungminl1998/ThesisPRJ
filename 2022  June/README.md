@@ -168,3 +168,195 @@ The function is made using Javascript, JQUERY. When the page loads, it will hide
 The function that is below the clickHandler function, the clickHandlers function, is called when the user clicks the exit button of the pop-up box. It will fade out the current div box and also the grey background will fade out. This is the only Javascript used in the index page. Next we will move on to how the pop-up boxes are created.
 > One important point to remember here is that the pop-up boxes are ALL hidden on page load.
 
+```php
+<?php $x = 0; $y = 0; $followers = 0; $likes = 0; $comments = 0; $impression = 0; $reached = 0; $interaction = 0; $saved = 0;?>
+	<?php foreach ( $users as $userInfo ) : ?>
+		<?php $followers =  $userInfo['business_discovery']['followers_count'];
+	?>
+	<?php endforeach; ?>
+    <div id="top">
+      <p id = "topDesc">SKKU Thesis Project</p>
+    </div>
+	<?php foreach ( $users as $userInfo ) : ?>
+  	<?php foreach ( $userInfo['business_discovery']['media']['data'] as $media ) : ?>
+	<div class = "moreInfo" name = "<?php echo $y; ?>">
+	<div class = "theTop">----- Inseo -----</div>
+	<div class = "outClose"><button class = "close" id = "b<?php echo $y++; ?>" onclick="clickHandlers(event)">x</button></div>
+    <div class="pages-list-item">
+		<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
+		<?php else : ?>
+        <img class="pages-media" src="<?php echo $media['media_url']; ?>" />
+      <?php endif; ?>
+	  	<div class = "lc">
+		  <h2>Likes: </h2> <b class = "cl"><?php $likes = $media['like_count']; echo $media['like_count']; ?></b>
+		  <h2>Comments: </h2> <b class = "cl"><?php $comments = $media['comments_count']; echo $media['comments_count']; ?></b>
+		</div>
+      	<div class = "caption">
+        	<?php
+			$string = $media['caption'];
+			$string = preg_replace('/#\w+/', '<b>$0</b>', $string, -1, $count);
+			echo nl2br($string);
+			?>
+		</div>
+		<div class = "caps" >
+			<h1> Hashtags </h1>
+			<h4 class = "nums"> NUMBER OF HASHTAGS: <?php echo $count?> </h4>
+			<div class = "hashes">
+			<?php
+			preg_match_all('/#\w+/',$string,$matches);
+			for($l = 0; $l < $count; $l++){
+				echo $matches[0][$l];
+				?> <?php
+			}
+			?>
+			</div>
+		</div>
+		<button class = "linkss" onclick="window.open('<?php echo $media['permalink']; ?>')">
+			<h4 class = "titles"> Link To Post </h4>
+		</button>
+      <br />
+      <div class = "mediaType" > Media Type: <?php echo $media['media_type'];  ?></div>
+	  <div class = "sep"></div>
+	  <div class = "sep1"></div>
+	  <div class = "sep2"></div>
+	 <?php 
+	 	  	  $mediaObject = array( // media post we are working with
+				'id' => $media['id'],
+				);
+				$mediaInsightsEndpoingFormat = ENDPOINT_BASE . '{ig-media-id}/insights?metric=engagement,impressions,reach,saved&access_token={access-token}';
+				$mediaInsightsEndpoint = ENDPOINT_BASE . $mediaObject['id'] . '/insights';
+				$mediaInsightParams = array(
+					'metric' => 'engagement,impressions,reach,saved',
+					'access_token' => $accessToken
+				);
+				$mediaInsights = makeApiCall( $mediaInsightsEndpoint, 'GET', $mediaInsightParams );
+				$inst = 0;
+				?>
+				<div class = "theinsight">
+				<?php foreach ( $mediaInsights['data'] as $insight ) : ?>
+					<?php if($inst == 3){
+						continue;
+					}?>
+					<div class = "reach">
+						<div class = "titless">
+							<b><?php 
+							if($inst == 0){
+								echo "Interactions";
+							}else if($inst == 1){
+								echo "Impression";
+							}else if($inst == 2){
+								echo "Reach";
+							}			
+							?></b>
+						</div>
+						<div class = "vals">
+							<?php foreach ( $insight['values'] as $value ) : ?>
+								<div><?php
+									if($inst == 0){
+										$interaction = $value['value'];
+										echo $value['value'];
+										$inst+=1;
+									}else if($inst == 1){
+										$impression = $value['value'];
+										echo $value['value'];
+										$inst+=1;
+									}else if($inst == 2){
+										$reached = $value['value'];
+										echo $value['value'];
+										$inst+=1;
+									}else if($inst == 3){
+										$saved = $value['value'];
+										$inst+=1;
+									}	
+									
+									?>
+								</div>
+							<?php endforeach; ?>
+						</div>
+								</div>
+				<?php endforeach; ?>
+								</div>
+
+	  <div class = "calculations">
+	 		<?php
+				$like2follower = $likes/$followers;
+				$commentlike = $interaction/$reached;
+				$impressionrate = $reached/$impression;
+			?>
+			<div class = "reach">
+				<div class = "titless">Like Follower Ratio</div>
+				<b class = "vals"><?php echo number_format((float)$like2follower, 2, '.', '');?></b>
+			</div>
+			<div class = "reach">
+				<div class = "titless">Reach Interaction Ratio </div>
+				<b class = "vals"><?php echo number_format((float)$commentlike, 2, '.', '');?></b>
+			</div>
+			<div class = "reach">
+				<div class = "titless">Impression Rate </div>
+				<b class = "vals"><?php echo number_format((float)$impressionrate, 2, '.', '');?></b>
+			</div>
+		</div>
+		<div class = "recommendation">
+			<div class = "recom">RECOMMENDATIONS </div>
+			<div class = "recomss">
+			<?php 
+				$rcount = 0;
+
+				if($count < 15) {
+					$rcount+=1;
+					echo $rcount . ". Your current hashtag count is " . $count . ". You should add ". (15 - $count) . " hashtag(s) more.";?><br><?php
+				}
+				if($commenlike < 0.12){
+					$rcount+=1;
+					echo  $rcount . ". You should create more contents where users can interact with you in order to increase the number of interaction in your account.";?><br><?php
+					echo "Increasing the interaction could also help your account get more attraction."; ?><br><?php
+				}
+				if($like2follower < 0.15){
+					$rcount+=1;
+					echo  $rcount . ". Maybe this post's topic is not appealing to your audience. You should make posts to attract your followers attention before others.";?><br><?php
+					echo "Try changing your caption.";?><br><?php
+				}
+				if($impressionrate <= 0.88){
+					$rcount+=1;
+					echo  $rcount . ". Your photo is not getting clicked when shown in search.";?><br><?php
+					echo "Try changing your thumbnail.";?><br><?php
+				}
+				if($rcount == 0){
+					echo "This post is optimized 100%. ";
+				}
+			?>
+			</div>
+		</div>
+		<div class = "contentG">
+			<div class = "recom">Content Grade </div>
+			<div class = "grade">
+				<?php
+					if($rcount == 0){
+						echo "A+";
+					}else if($rcount == 1){
+						echo "A";
+					}
+					else if($rcount == 2){
+						echo "B";
+					}else if($rcount == 3){
+						echo "C";
+					}else if($rcount == 4){
+						echo "D";
+					}
+					
+				?>
+			</div>
+		</div>
+      <?php if ( 'CAROUSEL_ALBUM' == $media['media_type'] ) : ?>
+        <div>
+          <?php foreach ( $media['children']['data'] as $child ) : ?>
+            <img class="child-media" src="<?php echo $child['media_url']; ?>" />
+          <?php endforeach; ?>
+        </div>x	
+      <?php endif; ?>
+      <br />
+		  </div>
+		  </div>
+ 	 <?php endforeach; ?>
+	<?php endforeach; ?>
+```
