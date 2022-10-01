@@ -146,18 +146,18 @@ After getting all the data from Instagram and Facebook, I use the previously des
 The code above is the code used to get fetch the posts datas. Moreover, by using the code above we get the user's data. In the igParams, we can see a list of parameters that we are getting. There we call all the data including the users data and also their posts. This would return a JSON in the end. The JSON would be use to call the elements later on within the body in order to build the page and fill it with the logged in user data. 
 
 ```html
-			<div id = "posts">
-				<?php foreach ( $userInfo['business_discovery']['media']['data'] as $media ) : ?>
-					<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
-					<?php else : ?>
-						<div class = "thep">
-							<?php if ( 'IMAGE' == $media['media_type'] || 'CAROUSEL_ALBUM' == $media['media_type']) : ?>
-								<img class="imgs" src="<?php echo $media['media_url']; ?>" />
-							<?php endif; ?>
-						</div>
+	<div id = "posts">
+		<?php foreach ( $userInfo['business_discovery']['media']['data'] as $media ) : ?>
+			<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
+			<?php else : ?>
+				<div class = "thep">
+					<?php if ( 'IMAGE' == $media['media_type'] || 'CAROUSEL_ALBUM' == $media['media_type']) : ?>
+						<img class="imgs" src="<?php echo $media['media_url']; ?>" />
 					<?php endif; ?>
-				<?php endforeach; ?>
-			</div>
+				</div>
+			<?php endif; ?>
+		<?php endforeach; ?>
+	</div>
 ```
 
 <h3>Hashtags Page</h3>
