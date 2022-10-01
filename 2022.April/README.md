@@ -111,8 +111,36 @@ As mentioned above, the user will click the group of tags that they want to open
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
+```HTML
+      <div id = "bodyContainer">
+        <div id = "posts">
+          <div class = "thep">
+            <img class="imgs" src = "assets/test1.jpg">
+            <div class = "hov">
+              <p class = "thegradeP">Post Grade:</p>
+              <p class = "pGrade">B</p>
+            </div>
+          </div>
+        </div>
+      </div>
+```
+The code above is where the user's posts will be shown with the corresponding grade. However, it is still not complete. I need to see how the Facebook Graph API works in order to finish the design.
 
 Users will be able to move to each page by using the common menu in the top of the page. The menu will be composed of three pages.
   1. Posts Page
   2. Hashtag Page
   3. Caption Page
+The code below shows the code for the menu.
+```HTML
+      <div id = "bodyContainer">
+        <div id = "posts">
+          <div class = "thep">
+            <img class="imgs" src = "assets/test1.jpg">
+            <div class = "hov">
+              <p class = "thegradeP">Post Grade:</p>
+              <p class = "pGrade">B</p>
+            </div>
+          </div>
+        </div>
+      </div>
+```
