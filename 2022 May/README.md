@@ -169,4 +169,5 @@ The code above is the code used to get fetch the posts datas. Moreover, by using
 		<?php endforeach; ?>
 	</div>
 ```
-The code above shows how we fetch the data from the JSON produced above. Since we are trying to get the data for the posts, we get the "media" JSON data. As it can be seen, the image source would be the media URL and it is called with the data that is within the JSON. In order to get all the images, we use the for loop. This way we can get all the datas for each post. 
+The code above shows how we fetch the data from the JSON produced above. Since we are trying to get the data for the posts, we get the "media" JSON data. As it can be seen, the image source would be the media URL and it is called with the data that is within the JSON. In order to get all the images, we use the for loop. This way we can get all the datas for each post.
+One important point to remember here is that we will not be getting the Video posts from instagram. This is because 
