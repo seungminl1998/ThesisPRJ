@@ -168,6 +168,8 @@ The function is made using Javascript, JQUERY. When the page loads, it will hide
 The function that is below the clickHandler function, the clickHandlers function, is called when the user clicks the exit button of the pop-up box. It will fade out the current div box and also the grey background will fade out. This is the only Javascript used in the index page. Next we will move on to how the pop-up boxes are created.
 > One important point to remember here is that the pop-up boxes are ALL hidden on page load.
 
+Now, I will be explaining how the pop-up boxes were created and how I made them work. Since the code is too long, I am chopping them into pieces in order for a better understanding.
+
 ```php
 <?php $x = 0; $y = 0; $followers = 0; $likes = 0; $comments = 0; $impression = 0; $reached = 0; $interaction = 0; $saved = 0;?>
 	<?php foreach ( $users as $userInfo ) : ?>
@@ -183,7 +185,10 @@ The function that is below the clickHandler function, the clickHandlers function
 	<div class = "theTop">----- Inseo -----</div>
 	<div class = "outClose"><button class = "close" id = "b<?php echo $y++; ?>" onclick="clickHandlers(event)">x</button></div>
 ```
-	
+The code above is the first chunk. As it can be seen, in the first line of the PHP code, there are many variables. 
+- $x variable is used to mark down the actual posts div that the users see when the page loads.
+- $y variable
+
 ```php
     <div class="pages-list-item">
 		<?php if ( 'VIDEO' == $media['media_type']) : continue;?>
