@@ -7,10 +7,12 @@ By the ends of this project, the web application will be able to grade the posts
 If this application is presented to the market, the Instagram Influencers will be able to have a better experience when uploading their instagram posts. 
 It will be easier for them to manage their post and profile and they will also be able to see their profile grade which will make them easier to know how well they are doing.
 <h2>Amount of money used in Project</h2>
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
 <h2>Reason of Project</h2>
 
 The reason why I started this project was because I myself am a YoutTube and Instagram influencer. <br>
