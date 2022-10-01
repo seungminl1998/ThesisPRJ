@@ -24,9 +24,6 @@ However, I am currently having some problems on making the Facebook Login work. 
 <?php
     include 'defines.php';
 
-    // load graph-sdk files
-    require_once __DIR__ . '/vendor/autoload.php';
-
     // facebook credentials array
     $creds = array(
         'app_id' => FACEBOOK_APP_ID,
