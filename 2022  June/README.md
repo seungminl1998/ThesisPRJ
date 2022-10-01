@@ -195,7 +195,7 @@ The code above is the first chunk. As it can be seen, in the first line of the P
 - $interaction variable is used to contain the number of interactions of a post.
 - $saved variable is used to contain the number of people who saved the corresponding post.
 		
-The first two variables are going to be used to point at each other. 
+The first two variables are going to be used to make the post div and the pop-up div point at each other. As it can be seen, the pop-up div has class moreInfo and its name will be the $y variable. Hence, everytiime a post div is clicked, the JQuery will check the clicked box ID which will be $x and will find the popup box with the same value $y. This way, the popup box corresponding to the clicked div will open. Moreover, in the end, we can see a close button. The close button is used to close the popup. It will also have an id of $y because we need to know which box to close. When the button is clicked, the clickHandlers function of JQuery explain above will be called. 
 
 ```php
     <div class="pages-list-item">
