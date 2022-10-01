@@ -98,8 +98,7 @@ In order for this to work, I need to pre-register my access token, the page id a
 
 <h3>Posts Page</h3>
 The posts page is the page where the users will be able to see all their posts and also its data. This page can be only reached when the user is authenticated. The users will see the general information of their instagram account. Meaning that they will see their:
-	
-	- instagram ID
-	- number of followers 
-	- number of followings
-	- number of posts
+- instagram ID
+- number of followers 
+- number of followings
+- number of posts
