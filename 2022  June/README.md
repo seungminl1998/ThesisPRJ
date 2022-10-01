@@ -106,6 +106,7 @@ The posts page is the page where the users will be able to see all their posts a
 
 Then, in the middle there will be a menu that the users will use to navigate. Then below it, the body of the page will be present. The body will have the posts of the users.
 > One important point to remember here is that the Instagram API will only fetch 20 posts. This is the hard limit of the API. However it does not matter because posts that are old, even though they are optimized, it has a low chance of it being picked up by the instagram algorithm.
+
 In the past version we could see how the media datas were brought as a JSON. The below code shows how the JSON is used to show the user the data.
 
 ```
