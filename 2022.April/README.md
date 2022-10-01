@@ -58,6 +58,8 @@ As mentioned above, the goal for this project is to make instagram influencers h
           </form>
         </div>
 ```
+This is the skeleton code that will be used to show the users the tag lists that they have saved in their account. I filled in the divs with 1 because this is just a designing stage. In the future stages, the PHP code will bring the elements from the database and replace the 1 to the actual tag list name. When the div is clicked, it will open another list which is in the code below this. 
+
 ```HTML
  <div id = "tagsInfo">
         <div id = "exTitle">
@@ -105,6 +107,7 @@ As mentioned above, the goal for this project is to make instagram influencers h
         </div>
       </div>
 ```
+As mentioned above, the user will click the group of tags that they want to open. When the div is clicked, the code above will start to show. The reason why it is filled of a random text is because this is just a skeleton code. In the future, the values will be brought from the database. Moreover, as it can be seen above, 
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
