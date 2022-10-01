@@ -9,7 +9,7 @@ It will be easier for them to manage their post and profile and they will also b
 <h2>Amount of money used in Project</h2>
 
 | ITEM | COST |
-| ------------- | ------------- |
+|  :---: |  :---: |
 | Domain  | ₩ 20,000  |
 | SSL  | ₩ 48,000  |
 | Hosting Service  | ₩ 160,000  |
