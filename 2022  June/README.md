@@ -59,4 +59,4 @@ The index page is the page that the users will see first. It is where the users 
     }
     ?>
 ```
-First, as it can be seen, we are also calling the vendor directory. This was not in the last version but this is a key factor when calling the Facebook OAUTH. Moreover, as it can be seen, the permissions got reduced. This is because I 
+First, as it can be seen, we are also calling the vendor directory. This was not in the last version but this is a key factor when calling the Facebook OAUTH. Moreover, as it can be seen, the permissions got reduced. This is because there were permissions that were not needed. I thought we needed all those permissions but it turns out that it was not. Moreover, it can be seen that the echo creating the <a> tag is not there. The <a> tag was converted into a button in this version. 
