@@ -48,6 +48,11 @@ The index page is the page that the users will see first. It is where the users 
             'public_profile',
             'instagram_basic',
             'pages_show_list',
+            'instagram_manage_comments',
+            'instagram_manage_insights',
+            'instagram_content_publish',
+            'instagram_manage_messages',
+            'pages_read_engagement'
         ];
         $loginUrl = $helper->getLoginUrl( FACEBOOK_REDIRECT_URI, $permissions );
 
