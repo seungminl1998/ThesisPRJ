@@ -89,6 +89,22 @@ However, I am currently having some problems on making the Facebook Login work. 
     ?>
  ```
 The code above is the code use to establish the Facebook OAUTH. In order to make the OAUTH work, I got the access token and the extra data and put it in the defines file. The define file contains the extension data in order for the Facebook OAUTH work. Then, when it is the user's first time logging in with Facebook, we need to ask the permissionns. As it can be seen in the code above, there is a permission section. Those are the permissions needed in order for the Facebook API work. Without those permissions, InSEO won't be able to fetch the data and nothing would work.
+
+```php
+<?php
+	session_start();
+
+	define( 'FACEBOOK_APP_ID', '3217833905153910' );
+	define( 'FACEBOOK_APP_SECRET', '●●●●●●●●' );
+	define( 'FACEBOOK_REDIRECT_URI', 'https://inseo.co.kr/inseo/index.php' );
+	define( 'ENDPOINT_BASE', 'https://graph.facebook.com/v13.0/' );
+
+	// accessToken
+	$accessToken = 'AAtumlbc53YBAHoJVo3uqVQiUIFAnXsgblNfTWTFHvdpejt7avZASJScr4x3OzONFyqrEBR2f3NI9dfAZCIpqzg39P4VFcAHUPHic49VXImPWi8EzfRzoMrF7KK8tTLHTMAuyNcCPqom9WO8AHxf64CsRlNWmkGK3CDhE8AJvyRNzaENyO
+	';
+	?>
+```
+
 The access token is found in the developers page.
 
  ```php
