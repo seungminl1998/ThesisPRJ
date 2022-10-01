@@ -7,6 +7,14 @@ I am making the front end and the back end of the <b>Application InSEO</b>.
 
 >The hosting service was registered using **WHOIS Hosting Service**.
 
+<h2>Amount of money used until now</h2>
+
+| ITEM | COST |
+|  :---: |  :---: |
+| Domain  | ₩ 20,000  |
+| SSL  | ₩ 48,000  |
+| Hosting Service  | ₩ 160,000  |
+
 I registered to a hosting service with linux light in order to get to use a database (MySQL) and also to use PHP to connect to the server. For a reminder in this project I am using the following languages:<br>
    - **HTML**<br>
    - **JAVASCRIPT (JQUERY)**<br>
