@@ -30,6 +30,7 @@ The index page starts with a header which contains the text "SKKU THESIS PROJECT
             START
         </a>';?>
  ```
+I projected a link tag from html using PHP and added css on it so that it could look like a button. The link is pointing to the login URL which was predefined.
 
 **The Caption Page**<br/>
 The next page that I made was the caption page where the users will be able to save their captions. The reason why I made this was because people save their captions in their notes. In this page, users will be able to save and delete their captions before and after using it. This way, they will be able to have their captions, hashtags and posts insights in one page which wil give them more organization.
