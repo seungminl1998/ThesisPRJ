@@ -19,6 +19,74 @@ Moroever, in order to be able to get the instagram post insights, I bought the S
 <h3>Index Page</h3>
 The Index Page is the first page that the users will see when the type in the domain in the search tab. In April's update, we had the Index File in a normal .html file. This was because I did not have the domain nor the SSL to be using the Facebook Login OAUTH. At first, my idea was to make the users register and login in the application itself. However, the professor gave me the idea of connecting it with Facebook and use the Facebook OAUTH. This way, we could get the instagram data all at once with just one click. This would make the users more comfortable because no registration will be needed. 
 However, I am currently having some problems on making the Facebook Login work. It shows an error when the start button is clicked. I still could not find the problem hence I decided to continue working on other pages.
+```PHP
+<?php
+    include 'defines.php';
+
+    // load graph-sdk files
+    require_once __DIR__ . '/vendor/autoload.php';
+
+    // facebook credentials array
+    $creds = array(
+        'app_id' => FACEBOOK_APP_ID,
+        'app_secret' => FACEBOOK_APP_SECRET,
+        'default_graph_version' => 'v13.0',
+        'persistent_data_handler' => 'session'
+    );
+
+    // create facebook object
+    $facebook = new Facebook\Facebook( $creds );
+
+    // helper
+    $helper = $facebook->getRedirectLoginHelper();
+
+    // oauth object
+    $oAuth2Client = $facebook->getOAuth2Client();
+
+    if ( isset( $_GET['code'] ) ) { // get access token
+        try {
+            $accessToken = $helper->getAccessToken();
+        } catch ( Facebook\Exceptions\FacebookResponseException $e ) { // graph error
+            echo 'Graph returned an error ' . $e->getMessage;
+        } catch ( Facebook\Exceptions\FacebookSDKException $e ) { // validation error
+            echo 'Facebook SDK returned an error ' . $e->getMessage;
+        }
+
+        if ( !$accessToken->isLongLived() ) { // exchange short for long
+            try {
+                $accessToken = $oAuth2Client->getLongLivedAccessToken( $accessToken );
+            } catch ( Facebook\Exceptions\FacebookSDKException $e ) {
+                echo 'Error getting long lived access token ' . $e->getMessage();
+            }
+        }
+
+        echo '<pre>';
+        var_dump( $accessToken );
+
+        $accessToken = (string) $accessToken;
+        echo '<h1>Long Lived Access Token</h1>';
+        print_r( $accessToken );
+    } else { // display login url
+        $permissions = [
+            'public_profile',
+            'instagram_basic',
+            'pages_show_list',
+            'instagram_manage_insights', 
+            'instagram_manage_comments', 
+            'manage_pages',
+            'ads_management', 
+            'business_management', 
+            'instagram_content_publish', 
+            'pages_read_engagement'
+        ];
+        $loginUrl = $helper->getLoginUrl( FACEBOOK_REDIRECT_URI, $permissions );
+
+        echo '<a href="' . $loginUrl . '">
+            Login With Facebook
+        </a>';
+    }
+    ?>
+ ```
 
 <h3>Posts Page</h3>
 The Posts Page is the second page that the users will see after logging in using Facebook. In this page, I am using the Facebook Graph API in order to get the following datas:<br>
