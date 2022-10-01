@@ -46,6 +46,18 @@ Since I am in the design stage, I just made the form without the PHP.
 
 **The Hashtag Page**<br/>
 As mentioned above, the goal for this project is to make instagram influencers have a better organization of their current posts and also their future posts. In this page, the users will be able to search hashtags and also store their hashtags in their "hashtag bag". This will make the instagram influencer's life more comfortable because they will be able to **get every information they want to insert in their posts by just opening our application.**
+```HTML
+        <div id = "lists">
+          <form id = "tagForm">
+            <button class = "items" ><p class="tagsTITLE" name = "tagList">My Post Tag Number 1</p></button>
+            <div class = "items">1</div>
+            <div class = "items">1</div>
+            <div class = "items">1</div>
+            <div class = "items">1</div>
+            <div class = "items">1</div>
+          </form>
+        </div>
+```
 
 **The Posts Page**<br/>
 The next page that I made was the post page where the users get to see their posts and the insights. The service is able to get the post data and insights using the Instagram Graph API. Moreover, the app also checks the insights and calculates the post's grade in order for the user to upgrade their post for more reach. Instagram influencers will then, be able to see the problems of their post more straight resulting to a better post optimization. 
