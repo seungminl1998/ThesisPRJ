@@ -16,6 +16,9 @@ I registered to a hosting service with linux light in order to get to use a data
 Moroever, in order to be able to get the instagram post insights, I bought the SSL Security Certificate **Sectigo Basic DV Single**. This allows my web page to use "HTTPS" which is a must in order to use the Instagram Graph API which is the API needed to get the post insights. 
 <img width="430" alt="Screen Shot 2022-08-13 at 8 18 42 AM" src="https://user-images.githubusercontent.com/101083759/184456058-1bb5c2fc-9291-4f6c-af84-657109159a7f.png">
 
+<h3>Reason of Buying</h3>
+The reason why I bought the SSL and the hosting service as well as the domain was because I wanted to make the Facebook OAUTH work. By making the Facebook OAUTH, it would be easier for the users to login. Moreover, since Facebook is connected to Instagram, it would be better for us and also for the users to login using Facebook.
+
 <h3>Index Page</h3>
 The Index Page is the first page that the users will see when the type in the domain in the search tab. In April's update, we had the Index File in a normal .html file. This was because I did not have the domain nor the SSL to be using the Facebook Login OAUTH. At first, my idea was to make the users register and login in the application itself. However, the professor gave me the idea of connecting it with Facebook and use the Facebook OAUTH. This way, we could get the instagram data all at once with just one click. This would make the users more comfortable because no registration will be needed. 
 However, I am currently having some problems on making the Facebook Login work. It shows an error when the start button is clicked. I still could not find the problem hence I decided to continue working on other pages.
