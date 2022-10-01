@@ -84,4 +84,4 @@ The code above shows the button that takes the user to the Facebook OAUTH. It is
 	$instagramAccountId = '17841447930157103';
 ?>
 ```
-In order for this to work, I need to pre-register my access token, the page id and the instagram business account id in the defines file. This is needed because the application is not public for the users. Meaning that only I can use the application. If any other user tries to log in with their Facebook account, they won't be able to get the posts nor any other data because they do not have their acces token and any other data.
+	In order for this to work, I need to pre-register my access token, the page id and the instagram business account id in the defines file. This is needed because the application is not public for the users. Meaning that only I can use the application. If any other user tries to log in with their Facebook account, they won't be able to get the posts nor any other data because they do not have their acces token and any other data. Hence is the reason why I am the only tester for now. I am currently finding a way to make
