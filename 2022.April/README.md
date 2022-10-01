@@ -41,6 +41,8 @@ The next page that I made was the caption page where the users will be able to s
         <div class = "captions">1. Hello my name is seungmin and this is my thesis project</div>
       </form>
 ```
+This is the most important code of the caption page. As it can be seen, I put the input and button tags inside a form tag. The next thing I am going to create is the PHP function to update the database so that it adds the inputed caption into the captions database. Moreover, the php will also call the elements from the database and add it into the div with the class captions. The reason why I made a form was because in order for the PHP contact the server, it needs a submit form.
+Since I am in the design stage, I just made the form without the PHP.
 
 **The Hashtag Page**<br/>
 As mentioned above, the goal for this project is to make instagram influencers have a better organization of their current posts and also their future posts. In this page, the users will be able to search hashtags and also store their hashtags in their "hashtag bag". This will make the instagram influencer's life more comfortable because they will be able to **get every information they want to insert in their posts by just opening our application.**
