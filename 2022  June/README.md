@@ -396,3 +396,7 @@ I did a research of many instagram influencer accounts. From the ones that were 
  	 <?php endforeach; ?>
 	<?php endforeach; ?>
 ```
+The code above shows how the grades are shown to the user. In the chunk of code before this, the $rcount variable was defined and a value was assigned according to the calculations. We said that the lower the $rcount value was, the higher the post grade would be. As it can be seen in the code, there are if-else statements checking the $rcount value and according to its value the grade would be shown to the user. In the end, we also get the childrent images if the post is a carousel album. A carousel album is a post with various images. However this is not working at this moment and I still do not know the problem. 
+
+<h3>Hashtag Page</h3>
+The posts page is the page where the users will be able to see all their posts and also its data. This page can be only reached when the user is authenticated. The users will see the general information of their instagram account. They will seeing the following datas above:
