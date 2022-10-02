@@ -11,7 +11,7 @@ In this month's update, I made the hashtag search more interactable with the use
 | Google Trends API  | ₩ 7,000 per Month  |
 | **TOTAL**  | **₩ 242,000**  |
 
-	I cancelled the previous API and subscribed to a new Hashtag API
+	I cancelled the previous API and subscribed to a new Google Trends API
 
 <h3>Captions Page</h3>
 The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
