@@ -72,4 +72,4 @@ This is the data used in YouTube in order to tell if it is a good content or not
 - comments per like ratio 
 - impression reach rate <br>
         
-    By. Seungmin Lee with Student ID. 2016******
+        By. Seungmin Lee with Student ID. 2016******
