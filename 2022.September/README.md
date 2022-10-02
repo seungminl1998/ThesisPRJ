@@ -15,4 +15,31 @@ In this month's update, I made many changes to the hashtag page. In the last ver
 	I re-subscribed to the Hashtag API
 
 <h3>Hashtag Page</h3>
-The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
+When explaining the changes made in the Hashtag Page, I will separate the code in chunks because the code is too long.
+
+```php
+            <?php
+                      if(isset($_POST['text'])){
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                          // collect value of input field
+                          $hashtag = $_REQUEST['name'];
+                          $hashtagSearchEndpoingFormat = ENDPOINT_BASE . 'ig_hashtag_search?user_id={user-id}&q={hashtag-name}&fields=id,name';
+            
+                          // get hashtag by name
+                          $hashtagSearchEndpoint = ENDPOINT_BASE . 'ig_hashtag_search';
+                          $hashtagSearchParams = array(
+                              'user_id' => $instagramAccountId,
+                              'fields' => 'id,name',
+                              'q' => $hashtag,
+                              'access_token' => $accessToken
+                          );
+                          $hashtagSearch = makeApiCall( $hashtagSearchEndpoint, 'GET', $hashtagSearchParams );
+                          unset($_SESSION['hashtagId']);
+                          $_SESSION['hashtagId'] = $hashtagSearch['data'][0]['id'];
+                          header("Location:hashtag4.php");
+                          ob_end_flush(); 
+                        }
+                      }
+            ?>
+```
+The code above is used to get the most popular posts regarding the hashtag that the user searched.
