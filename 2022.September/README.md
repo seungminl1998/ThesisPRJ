@@ -50,3 +50,16 @@ The code above is used to get the most popular posts regarding the hashtag that 
 - Access Token: this is the access token of the authenticated user and the value comes from the $_SESSION established on page load.
 
 By calling this api, we will be getting the ID of the hashtag searched. As it can be seen in the code, we are saving another $_SESSION variable for "hashtagID". We need the hashtag ID because in order to get the top related post, instagram api does not search for the hashtag with the exact spelling, but it uses hashtag IDs. Instagram sets an ID for each hashtag created. This is a sign that instagram really cares about the hashtags because they are not just normal strings, each of them have an ID. After we assign the session variable for the hashtag ID, we move to the hashtag 4 page.
+
+```php
+<?php
+  session_start();
+	$accessToken = $_SESSION['accessToken'];
+	$pageId = $_SESSION['pageID'];
+	$instagramAccountId = $_SESSION['instagramID'];
+	$usernms = $_SESSION['username'];
+    $hashtagId = $_SESSION['hashtagId'];
+    $hash = $_SESSION['hashtag'];
+?>
+```
+At the top of the hashtag4.php file, we can see that there are more session variables. This is because this page is in charge of showing the users a pop-up box of regarding the keyword that the user searched for. 
