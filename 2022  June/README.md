@@ -399,4 +399,12 @@ I did a research of many instagram influencer accounts. From the ones that were 
 The code above shows how the grades are shown to the user. In the chunk of code before this, the $rcount variable was defined and a value was assigned according to the calculations. We said that the lower the $rcount value was, the higher the post grade would be. As it can be seen in the code, there are if-else statements checking the $rcount value and according to its value the grade would be shown to the user. In the end, we also get the childrent images if the post is a carousel album. A carousel album is a post with various images. However this is not working at this moment and I still do not know the problem. 
 
 <h3>Hashtag Page</h3>
-The posts page is the page where the users will be able to see all their posts and also its data. This page can be only reached when the user is authenticated. The users will see the general information of their instagram account. They will seeing the following datas above:
+The hashtag page is the page where the users will be able to save their hashtags in their "Tag Bag" and also do their hashtag research. The hashtag page is composed of three different PHP files. Each of them will open when an action is performed because some divs are hidden on page load. When an update to database is done, in order to show the users the update right away, a refresh is needed. However, if I refresh and stay in the same page, the divs would hide on page load. Hence, I made another hashtag page that would not close the div on page load. Since for the tag bag , there are 3 functions, I made three different pages. The first page would have all the pop-up divs closed. The second page would have the tag group list pop-up div shown and the thrid page would have the tags list of the tag group pop-up div shown as well as the tag group list div.
+
+```html
+        <form action = "hashtag2.php" id = "cTittle" method = "get">
+          <input type="text" placeholder="Write the Title of the List" id = "titleIn" name = "tableN"></input>
+          <button id = "add" disabled = "disabled">+</button>
+		     <div class = "closeds" style="background:#db4047;">x</div>
+        </form>
+```
