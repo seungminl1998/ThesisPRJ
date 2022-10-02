@@ -51,10 +51,10 @@ the list could become too large hence is the reason why we added a delete button
 	$sql = "SELECT id, caption FROM `".$usernms.".caption`";
 	$result = $conn->query($sql);
 ```
-With the result that we got from the query we run a while loop to create the divs and the buttons to be shown to the user. The reason why we make a while loop is because we need to go through all the resulting rows from the database query. For each row first we create the div which will contain the number of iteration and the caption itself.  Then, another div is going to be created which will contain a form with an invisible input box with the ID of the current database row. The input box will be followed by a delete button which will call the if statement with "isset($_POST['delb'])" in it. When the delete button is clicked, it will take the value inside the input field which is the row ID. After getting the input field value, it will call a datanase query to delete the row with ID from input field. This is how I made the delete and add captions button in the captions page.
+With the result that we got from the query we run a while loop to create the divs and the buttons to be shown to the user. The reason why we make a while loop is because we need to go through all the resulting rows from the database query. For each row first we create the div which will contain the number of iteration and the caption itself. Then, another div is going to be created which will contain a form with an invisible input box with the ID of the current database row. The input box will be followed by a delete button which will call the if statement with "isset($_POST['delb'])" in it. When the delete button is clicked, it will take the value inside the input field which is the row ID. After getting the input field value, it will call a datanase query to delete the row with ID from input field. This is how I made the delete and add captions button in the captions page.
 
 <h3>Hashtag Page</h3>
-The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
+The hashtag page is the page where the users will be able to save their hashtag ideas in their tag bag and also do 
 
 ```html
 const settings = {
