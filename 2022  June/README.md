@@ -488,4 +488,5 @@ function clickHandler(event){
 		}
 </script>
 ```
-
+In the hashtag page, there will be a search bar in which the user will be able to type a keyword they want to do research. This is where the API bought from Rapid API will be used. This API will produce the suggested keywords for the user. For instance, if we type in coding, then the API will get us suggested keywords such as "codingisfun" "codinglife" and etc. Moreover, it will also give us how many posts there were in the last hour. This is a number needed because we want to see how popular the hashtag is. <br><br>
+The variable value is the variable that will contain the typed value. This variable will be appended in the API call. Then the API will get us the response in JSON format. We count the response length to open a loop to go through all the JSON values. Everything inside the loop shows how I decorated the table. Moreover, the suggested keywords are created as buttons so that the users can click the keyword to easily copy it to their clipboard. I append everything created in the loop inside the table created in the body container of the HTML code. 
