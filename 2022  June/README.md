@@ -408,3 +408,4 @@ The hashtag page is the page where the users will be able to save their hashtags
 		     <div class = "closeds" style="background:#db4047;">x</div>
         </form>
 ```
+The code above shows the first form which is used when the user tries to create a new tag group. The user will write the tag group title and will add the add button to create a table in the database which will later on contain the hashtags. The code below will show how we are managing the database.
