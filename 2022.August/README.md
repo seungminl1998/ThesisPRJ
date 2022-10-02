@@ -8,7 +8,7 @@ In this month's update, I made the hashtag search more interactable with the use
 | Domain  | ₩ 20,000  |
 | SSL  | ₩ 48,000  |
 | Hosting Service  | ₩ 160,000  |
-| Hashtag API  | ₩ 7,000 per Month  |
+| Google Trends API  | ₩ 7,000 per Month  |
 | **TOTAL**  | **₩ 242,000**  |
 
 	I cancelled the previous API and subscribed to a new Hashtag API
