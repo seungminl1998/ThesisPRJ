@@ -158,3 +158,7 @@ We use the preg_replace function and search for strings with an "#" at the start
 </script>
 ```
 The code above shows how the we get the results from the hashtag API. Here we use the hashtag keyword typed in by the user. As it was previously explained, we saved the typed in hashtag value and hashtag id in session variables. The hashtag value which will be appended in the endpoint to make the API work will be fetched from the session variable hashtag. Then using the JSON result, we are going to make it look good in table form. This table created will be inside another pop-up div meaning that in this hashtag page, there will be 2 pop-ups.
+
+In this update, I also added a table sorting system. The table sort javascript was brought from an open source library in github. When the user clicks the table, it will sort alphabetically and also numerically.
+
+	The Table Sort Javascript was made by KyleFox
