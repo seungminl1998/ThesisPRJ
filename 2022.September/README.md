@@ -113,3 +113,47 @@ The code above shows how am I using the JSON result file to show it in the user 
    ?>
 ```
 We use the preg_replace function and search for strings with an "#" at the start. Then, all the words that start with an hashtag "#" will be made bold. We also use this to count how many hashtags the post have. The counted value will be assigned to $count. After we bold all the hashtag, we show the user how many hashtag it has using the $count variable and then we show the comment count and like count which is in the JSON result.
+
+```html
+<script>
+	const settingss = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://instagram-hashtags.p.rapidapi.com/?keyword="+value,
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Key": "c0f97e33dcmshe9fcb3dc0d40f21p116ac0jsn66914a52595f",
+			"X-RapidAPI-Host": "instagram-hashtags.p.rapidapi.com"
+		}
+	};
+	$.ajax(settingss).done(function (response) {
+		var thecount = response['length'];
+           	var tbodys = document.createElement("tbody");
+
+		for(var i = 0; i<thecount; i++){
+			var trs = document.createElement("tr");
+			var tds = document.createElement("td");
+			var td1s = document.createElement("td");
+			var buttonss = document.createElement("button");
+			var bs = document.createElement("b");
+			buttonss.setAttribute("class","cops");
+			var txt1s = response[i]['keyword'];
+			var txt2s = response[i]['post_last_hr'];
+          		var x = parseInt(txt2s);
+			if(txt2s > 1000){
+				bs.setAttribute("style","color:#29a659");
+			}else if(txt2s > 1800){
+				bs.setAttribute("style","color:#db4047");
+			}
+			buttonss.append(bs);
+			buttonss.append(txt1s);
+			td1s.append(txt2s);
+             		td1s.setAttribute("data-sort-value",x);
+			tds.append(buttonss);
+             		trs.append(tds,td1s);
+           		tbodys.append(trs);
+			$("#thetable").append(tbodys);
+		}
+	});
+</script>
+```
