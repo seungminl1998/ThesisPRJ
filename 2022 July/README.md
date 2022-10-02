@@ -133,3 +133,14 @@ In the body of the index page, there will be a username and password field. The 
 - The $_SESSION['pageID'] will contain the page ID of the authenticated user.
 
 After getting all those values, we continue to the Facebook OAUTH to get the permissions and all the necessary extra data. As it can be seen in the code, the header will only change when the username and password exists inside the database.
+
+```php
+<?php
+ session_start();
+	$accessToken = $_SESSION['accessToken'];
+	$pageId = $_SESSION['pageID'];
+	$instagramAccountId = $_SESSION['instagramID'];
+	$usernms = $_SESSION['username'];
+?>
+```
+The code above is used in all the other pages of the project. They are appended in the endpoint of the Facebook Graph API to call the data from the API. Since, in all the pages of the project, we need data from the API, we need to pass the variables throughout all the project. In the first line of each page, excluding the index page, we write a session_start() function to bring all the session variables saved in the server. Then, we assign them to the current page's variables. 
