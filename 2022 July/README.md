@@ -82,3 +82,22 @@ The code above runs when the submit button is clicked. We can do that by using t
 
 	One important point here is that the submit button to complete the registration 
 	will not be active until all fields are filled correctly.
+
+```html
+<script>
+ems.keyup(function(){ //Email input.
+        if(first == 1){
+          cnt.removeAttr('disabled');
+        }
+          if(checkMail(ems.val())){
+            first = 1;
+            ems.css("border-color", "#374785")
+          }else{
+            first = 0;
+            ems.css("border-color", "red")
+            cnt.attr("disabled","disabled");
+          }
+        });
+</script>
+```
+The jQuery above is used to check if the fields are correctly filled. The code above is only to check if the email field is typed in correctly. However, if you check the source code, there will be more like it to check other input fields. Here I also used regular expressions to check if the typed valued is in correct format. In jQuery the keyup function is used to run the function each time the keyboard is pressed. Hence, each time the user edits the format using the keyboard, the keyup function will activate and check right away if the format is correct. If the format is not correct, as it can be seen, it adds a disable element to the submit button's attribute which would make the button unclickable.
