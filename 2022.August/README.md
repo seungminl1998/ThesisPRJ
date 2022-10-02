@@ -42,3 +42,10 @@ The code above is the PHP code to connect with the database to interact with it 
 ?>
 ```
 After the user adds a caption, the users will also be able to delete it. The reason why I made a caption bag in the web application was because the project's goal is to make Instagram Influencer's planning process and analyzing process easier. In order to make the planning process easier or more comfortable the users must be able to do everything in just one application. Before users had to write their captions in the phone notes application. We wanted to make this available in the application so that users could enter and access the captions anywhere they were. If we do not add a delete function, 
+the list could become too large hence is the reason why we added a delete button. Each time a the user adds a caption, the caption page list will add a row of caption with a delete button by its side. As it can be seen in the code, we make a query to select all the captions in the database to show it in the user interface. 
+
+```php
+	$sql = "SELECT id, caption FROM `".$usernms.".caption`";
+	$result = $conn->query($sql);
+```
+With the result that we got from the query we run a while loop to create the divs and the buttons to be shown to the user. 
