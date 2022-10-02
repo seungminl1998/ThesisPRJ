@@ -427,3 +427,21 @@ The code above shows the first form which is used when the user tries to create 
     })
 ```
 When the user clicks the add button, an action will be triggered using JQuery. Inside the triggered action function, there will be a PHP that will be used to connect with the database and update or create tables. The servername, username, password, and the database name is needed in order to connect to the database. Then we establish a connection using mysqli. Then, we make a query which in this case would be to create a table with the name written in the input box. Since the input box is inside the form tag, and the form tag is of type GET, we can get the input value using $_GET variable. This is how we connect to the database and create a new table.
+
+```php
+            <?php
+            $sql = "SHOW TABLES FROM $dbname";
+            $result = mysqli_query($conn, $sql);
+            
+            if (!$result) {
+                echo "DB Error, could not list tables\n";
+                echo 'MySQL Error: ' . mysql_error();
+                exit;
+            }
+            
+            while ($row = mysqli_fetch_row($result)) {
+              echo "<form style = 'grid-row:1;' method = 'get' action = 'hashtag3.php'> <input type='text' style = 'display:none;' value = '".$row[0]."' name = 'nomTabla'></input><button class = 'items' name = 'chequear'><p class = 'tatgsTITLE' name = '".$row[0]."'>".$row[0]."</p></button></form>"; 
+            }
+          ?>
+```
+The code above shows how the tag groups are shown in the user interface. First we connect to the database and create a query. Since this time we need to fetch the data from the database we use the SHOW TABLES query. We check if the connection was established correctly and if it was we open a while statement to get through all the elements in the table. For each element, we create a form. As it can be seen in the code, we are creating a whole HTML code using echo of PHP. For each element, we create a form with an input that will be hidden. This will be explained later on. Moreover, a button is created and it will show the user the name of the table. Each element will be a clickable button because the users must be able to open the tag group to edit the hashtag list. The reason why there is a hidden input box is because the input box will contain the name of the table which, later on, will be used to fetch and open the corresponding table containing the hashtag list.
