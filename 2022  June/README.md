@@ -304,6 +304,7 @@ The code above shows how the insights of the clicked element inside the pop-up b
 - Impression
 - Reach
 
+In order to get those values of a post, we need to reach for the $insights[value] JSON variable. Inside it there will be the values of the insights mentioned above. As it can be seen in the code above, we open a for loop to get through the JSON variables inside the $insights[value] JSON. Then, each value will be assign to the variable that was mentioned in the first chunk of code. These values will be used later on to calculate the user's post grade which is shown in the code below. 
 
 ```html
 	  <div class = "calculations">
@@ -357,7 +358,8 @@ The code above shows how the insights of the clicked element inside the pop-up b
 			</div>
 		</div>
 ```
-	    
+The code above shows what does InSEO calculates and how it is giving out the recommendations. We will be calculating the like to follower ratio, comment to like ratio and the impression rate. This is the first thing we do in this chunk of code. The variables used here were initialized above and the values were given when getting the insight values. After calculating this we initialize another variable $rcount. $rcount is the variable that will be used to check how optmized the post is. The lower its number is, the post will get a better grade. We compare the values calculated with the standard that we pre-defined. If they are lower, we increase the $rcount by one and give out the user a recommendation that would help them optmized their post. If not, we do nothing.
+
 ```html
 		<div class = "contentG">
 			<div class = "recom">Content Grade </div>
