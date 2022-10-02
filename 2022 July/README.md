@@ -18,3 +18,4 @@ I had to write the access token, the page ID and the instagram account ID for th
 	Until now, the user's access token, instagram business account ID and page ID was brought from the defines file.<br>
 	But now, those information will be brought from the database.
 	
+Before being able to register, the users must send us an email saying that they want to use the application. Then, we will send them the information of where they need to send the money and what they need to do. The code below is the code for it.
