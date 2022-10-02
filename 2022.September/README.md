@@ -45,4 +45,8 @@ When explaining the changes made in the Hashtag Page, I will separate the code i
 The code above is used to get the most popular posts regarding the hashtag that the user searched. First we check if the search button was clicked or not. The if statement will activate if the search button is clicked. When the button is clicked, the $hashtag variable will get the value that is inside the input box. Then, using the variable, we set the parameters of the endpoint used to call the Facebook Graph API. As it can be seen in the array of $hashtagSearchParams variable, there are 4 fields. User ID, Fields, q, and access token.
 
 - User ID: it is the user ID of the authenticated user and the value comes from the $_SESSION established when the page loaded.
-- 
+- Fields: This is the fields that the API will be getting.
+- q: this is the hashtag value that the user is searching for.
+- Access Token: this is the access token of the authenticated user and the value comes from the $_SESSION established on page load.
+
+By calling this api, we will be getting the ID of the hashtag searched. As it can be seen in the code, we are saving another $_SESSION variable for "hashtagID". We need the hashtag ID because in order to get the top related post, instagram api does not search for the hashtag with the exact spelling, but it uses hashtag IDs. Instagram sets an ID for each hashtag created. This is a sign that instagram really cares about the hashtags because they are not just normal strings, each of them have an ID. After we assign the session variable for the hashtag ID, we move to the hashtag 4 page.
