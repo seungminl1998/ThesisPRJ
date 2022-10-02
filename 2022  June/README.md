@@ -145,7 +145,7 @@ In the past version we could see how the media datas were brought as a JSON. The
 		<?php endforeach; ?>
 </div>
 ```
-The code above was explained in the previous version. However, in this version there are several changes. There is a onclick event in each div containing one post. Moreover, the <img> tag created in each loop will have an unique id. Each round of loop, the value of $x will increase and that will be the id of the div. This is because when the post is clicked, a pop-up will show containing all the meta data of the clicked post. A <div> tag will be containing the <img> tag and each <img> tag will be showing a post. When the user clicks the post they want to analyze, they will be clicking the <div> and it will activate the onclick event which will go to the clickHandler(event) function. The code below shows the function. 
+The code above was explained in the previous version. However, in this version there are several changes. There is a onclick event in each div containing one post. Moreover, the <img> tag created in each loop will have an unique id. Each round of loop, the value of $x will increase and that will be the id of the div. This is because when the post is clicked, a pop-up will show containing all the meta data of the clicked post. A div tag will be containing the <img> tag and each <img> tag will be showing a post. When the user clicks the post they want to analyze, they will be clicking the <div> and it will activate the onclick event which will go to the clickHandler(event) function. The code below shows the function. 
 
 ```html
 <script>
