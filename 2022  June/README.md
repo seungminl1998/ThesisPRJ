@@ -8,8 +8,8 @@ In this month's update, I made a lot of changes and added a lot of features. Fir
 | Domain  | ₩ 20,000  |
 | SSL  | ₩ 48,000  |
 | Hosting Service  | ₩ 160,000  |
-| Hashtag API  | ₩ 7,000 per Month  |
-| **TOTAL**  | **₩ 242,000**  |
+| Hashtag API  | ₩ 5,000 per Month  |
+| **TOTAL**  | **₩ 240,000**  |
 
 <h3>Index Page</h3>
 The index page is the page that the users will see first. It is where the users can click the button start with facebook in order to call the Facebook OAUTH. 
