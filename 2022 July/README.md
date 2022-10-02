@@ -132,4 +132,4 @@ In the body of the index page, there will be a username and password field. The 
 - The $_SESSION['accessToken'] will contain the access code of the authenticated user.
 - The $_SESSION['pageID'] will contain the page ID of the authenticated user.
 
-After getting all those values, we continue to the Facebook OAUTH to get the permissions and all the necessary extra data.
+After getting all those values, we continue to the Facebook OAUTH to get the permissions and all the necessary extra data. As it can be seen in the code, the header will only change when the username and password exists inside the database.
