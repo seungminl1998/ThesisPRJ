@@ -71,10 +71,5 @@ This is the data used in YouTube in order to tell if it is a good content or not
 - likes follower ratio
 - comments per like ratio 
 - impression reach rate <br>
-
-*** IMPORTANT:
-        **THIS PROJECT WILL NOT BE OPENED FOR OTHER INSTAGRAM INFLUENCERS**.
         
-The project's progress will be written in the **README.md** file in each month with its corresponding source codes.
-
->By. Seungmin Lee with Student ID. 2016******
+    By. Seungmin Lee with Student ID. 2016******
