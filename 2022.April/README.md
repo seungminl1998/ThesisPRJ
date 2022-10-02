@@ -10,6 +10,12 @@ The image below is an image of the home page of the service:
 
 For this project I am using HTML, CSS, JQUERY, JSP, and MySQL.
 
+<h2>Amount of money used until now</h2>
+
+| ITEM | COST |
+|  :---: |  :---: |
+| **TOTAL**  | **₩ 0*  |
+
 **CHANGES IN PLAN**<br/>
 In week#1, I tried to make the front end for my website.
 I was wondering how I was going to finish this project and also started studying how to use the Facebook API.
