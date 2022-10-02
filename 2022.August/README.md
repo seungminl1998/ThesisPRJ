@@ -41,4 +41,4 @@ The code above is the PHP code to connect with the database to interact with it 
 	} 				
 ?>
 ```
-After the user adds a 
+After the user adds a caption, the users will also be able to delete it. The reason why I made a caption bag in the web application was because the project's goal is to make Instagram Influencer's planning process and analyzing process easier. In order to make the planning process easier or more comfortable the users must be able to do everything in just one application. Before users had to write their captions in the phone notes application. We wanted to make this available in the application so that users could enter and access the captions anywhere they were. If we do not add a delete function, 
