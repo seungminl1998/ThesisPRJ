@@ -298,7 +298,12 @@ After we get the number of hashtags we print this in the hashtag section. Inside
 				<?php endforeach; ?>
 			</div>
 ```
-	   
+The code above shows how the insights of the clicked element inside the pop-up box is fetched and shown to the user. The insight includes the following:
+	    
+- Interactions
+- Impression
+- Reach
+
 
 ```html
 	  <div class = "calculations">
