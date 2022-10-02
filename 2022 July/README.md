@@ -144,3 +144,7 @@ After getting all those values, we continue to the Facebook OAUTH to get the per
 ?>
 ```
 The code above is used in all the other pages of the project. They are appended in the endpoint of the Facebook Graph API to call the data from the API. Since, in all the pages of the project, we need data from the API, we need to pass the variables throughout all the project. In the first line of each page, excluding the index page, we write a session_start() function to bring all the session variables saved in the server. Then, we assign them to the current page's variables. 
+
+//We can put info about Hahstags
+
+For the next version I need to finish making the captions page. I need to make the connection with the database in the captions page as well as make the user be able to add more captions inside the database. Moreover, I am planning to make some changes in the hashtags page also.
