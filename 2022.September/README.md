@@ -112,4 +112,4 @@ The code above shows how am I using the JSON result file to show it in the user 
      echo ($string);
    ?>
 ```
-We use the preg_replace function and search for strings with an "#" at the start. Then, all the words that start with an hashtag "#" will be made bold. We also use this to count how many hashtags the post have. The counted value will be assigned to $count. 
+We use the preg_replace function and search for strings with an "#" at the start. Then, all the words that start with an hashtag "#" will be made bold. We also use this to count how many hashtags the post have. The counted value will be assigned to $count. After we bold all the hashtag, we show the user how many hashtag it has using the $count variable and then we show the comment count and like count which is in the JSON result.
