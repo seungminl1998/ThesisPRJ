@@ -1,3 +1,7 @@
+.page__content {
+
+text-align: justify;
+}
 <h1>Graduation Thesis Project (성균관대학교), 2022</h1>
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
