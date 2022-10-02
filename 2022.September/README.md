@@ -78,4 +78,5 @@ At the top of the hashtag4.php file, we can see that there are more session vari
                 $hashtagTopMedia = makeApiCall( $hashtagTopMediaEndpoint, 'GET', $hashtagTopMediaParams );
 ?>
 ```
-The code above is used to call the top media with the hashtag that the user searched for.
+The code above is used to call the top media with the hashtag that the user searched for. We use the hashtagID and append it to the endpoint. Then, we assign the required parameters which are the user ID, access token of the authenticated user and the fields that we need. We need the ID of the post, caption, the children images, comment count, like count, the media type and the media link. After we assign the parameters, we make the API call. The API will return the result in JSON format.
+
