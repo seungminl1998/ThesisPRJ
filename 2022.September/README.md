@@ -10,4 +10,4 @@ I made the tables be able to be sorted.
 | Hosting Service  | ₩ 160,000  |
 | Google Trends API  | ₩ 7,000 per Month  |
 | Hashtag API  | ₩ 5,000 per Month  |
-| **TOTAL**  | **₩ 242,000**  |
+| **TOTAL**  | **₩ 247,000**  |
