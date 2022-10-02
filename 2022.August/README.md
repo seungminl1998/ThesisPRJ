@@ -83,30 +83,30 @@ const settings = {
         }
       };
 	$.ajax(settings).done(function (response) {
-		var thecount = response['length'];
-		for(var i = 0; i<thecount; i++){
+            var tbody = document.createElement("tbody");
+		for(var i = 0; i<20; i++){
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		var td1 = document.createElement("td");
 		var buttons = document.createElement("button");
 		var b = document.createElement("b");
 		buttons.setAttribute("class","cops");
-		var txt1 = response[i]['keyword'];
-		var txt2 = response[i]['post_last_hr'];
-		if(txt2 > 1000){
-			b.setAttribute("style","color:#29a659");
-		}else if(txt2 > 1800){
-			b.setAttribute("style","color:#db4047");
+		var txt1 = response['default']['trendingSearchesDays'][0]['trendingSearches'][i]['title']['query'];
+		var txt2 = response['default']['trendingSearchesDays'][0]['trendingSearches'][i]['formattedTraffic'];
+		if(txt2 == "1M+"){
+                	td1.append("1000K+");
+		}else{
+                	td1.append(txt2);
 		}
 		buttons.append(b);
 		buttons.append(txt1);
-		td1.append(txt2);
 		td.append(buttons);
 		tr.append(td,td1);
-		$("#tables").append(tr);
-		}
+              	tbody.append(tr);
+		$("#tables").append(tbody);
+	}
 	});
 </script>
 ```
 The code above is a jQuery code which is used to get the data from the Google Trend API. The API would give us the result in JSON format so I use the data fetched from the JSON and create table rows and columns to show it to the user in the user interface. In order to use the Google Trend API, I do not have to put any values as in the Instagram Hashtag API. This is because the Instagram Hashtag API returns the suggested or related keyword to the keyword typed by the user. However, the Google Trend API crawls the most searched keyword from google and gives us the data in JSON format. Hence, we do not have to specify any values but we can specify the location and also the date. If we do not specify the location and date, the API would return us the most trending keyword in the United States with today's date. Since we want the API to return the most popular keyword today, we do not specify the date nor the location.<br><br>
-With the returned result, we get the length of it and run a for loop to go through the entire JSON file. For each result line, we create a table row and table columns. Moreover, we also create a button because we want the users to be able to copy the hashtag with one tap. We get the response keyword and 
+With the returned result, we get the length of it and run a for loop to go through the entire JSON file. For each result line, we create a table row and table columns. Moreover, we also create a button because we want the users to be able to copy the hashtag with one tap. For each result line, we get its keyword and the traffic for that specific keyword. These two values will be set in txt1 and txt2 variable. We append all these into the pre-built table and we move on to the next result line until we finish. 
