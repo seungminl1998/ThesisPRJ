@@ -473,29 +473,6 @@ th.sorted.descending:after {
 				<input name="name" id = "searchBar" placeholder="#tag search" ></input>
 				<button id = "srch" type = "text" name = "text"><img src="assets/whiteicon.png" id = "whiteicon"></button>
       </form>
-            <?php
-                      if(isset($_POST['text'])){
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                          // collect value of input field
-                          $hashtag = $_REQUEST['name'];
-                          $hashtagSearchEndpoingFormat = ENDPOINT_BASE . 'ig_hashtag_search?user_id={user-id}&q={hashtag-name}&fields=id,name';
-            
-                          // get hashtag by name
-                          $hashtagSearchEndpoint = ENDPOINT_BASE . 'ig_hashtag_search';
-                          $hashtagSearchParams = array(
-                              'user_id' => $instagramAccountId,
-                              'fields' => 'id,name',
-                              'q' => $hashtag,
-                              'access_token' => $accessToken
-                          );
-                          $hashtagSearch = makeApiCall( $hashtagSearchEndpoint, 'GET', $hashtagSearchParams );
-                          unset($_SESSION['hashtagId']);
-                          $_SESSION['hashtagId'] = $hashtagSearch['data'][0]['id'];
-                          header("Location:hashtag4.php");
-                          ob_end_flush(); 
-                        }
-                      }
-            ?>
 
 		<div id = "bodyContainer">
 		<table id = "tabless">
