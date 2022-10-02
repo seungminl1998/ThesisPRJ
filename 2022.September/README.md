@@ -104,4 +104,12 @@ The code above is used to call the top media with the hashtag that the user sear
              </div>
         </div>
 ```
-The code above shows how am I using the JSON result file to show it in the user interface. The moreInfo div is the container div of the pop-up for the top related posts. As all other pop-ups in the application, it will have a close button.
+The code above shows how am I using the JSON result file to show it in the user interface. The moreInfo div is the container div of the pop-up for the top related posts. As all other pop-ups in the application, it will have a close button. First, we will get the top related post that are images. The reason why we are just getting images is because if we start get caroussels and videos too, the page load would be too slow. Hence, in the current version of InSEO videos and caroussels will not be managed. We get the image and then we get the caption. After we get the caption we make the hashtags bold. The code below is how I made it.
+
+```php
+   <?php
+     $string = preg_replace('/#\w+/', '<b>$0</b>', $string, -1, $count);
+     echo ($string);
+   ?>
+```
+We use the preg_replace function and search for strings with an "#" at the start. Then, all the words that start with an hashtag "#" will be made bold. We also use this to count how many hashtags the post have. The counted value will be assigned to $count. 
