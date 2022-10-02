@@ -33,3 +33,18 @@ Before being able to register, the users must send us an email saying that they 
       ?>
 ```
 As always, there is a form with an input box and a submit button. The user must enter a valid email that we can contact. When the email is entered, it will be saved in the database and we will send them the email. 
+
+```html
+<script>
+      function checkMail(names){
+        var validate = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/); //Check if it is in email format.
+        if(names.length <= 0){
+        }else if(names.length > 0 && !validate.test(names)){
+        }else{
+          return true;
+        }
+      }
+</script>
+```
+The code above is the jQuery to check if the email is written in the correct format. The submit button will activate if the email is written in the correct form. In order to make this work I used the regular expression to keep track of the string sequence. <br><br>
+After the users receive the email and follow all the steps, they will be able to get the information to register. Then, they will start the registration process. The code below shows how the data is saved in the database. 
