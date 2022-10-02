@@ -101,3 +101,29 @@ ems.keyup(function(){ //Email input.
 </script>
 ```
 The jQuery above is used to check if the fields are correctly filled. The code above is only to check if the email field is typed in correctly. However, if you check the source code, there will be more like it to check other input fields. Here I also used regular expressions to check if the typed valued is in correct format. In jQuery the keyup function is used to run the function each time the keyboard is pressed. Hence, each time the user edits the format using the keyboard, the keyup function will activate and check right away if the format is correct. If the format is not correct, as it can be seen, it adds a disable element to the submit button's attribute which would make the button unclickable.
+
+```php
+         <?php
+            if(isset($_GET['fblg'])){
+              if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                // collect value of input field
+                $usrn = $_REQUEST['usrn'];
+                $pswd = $_REQUEST['pswd'];
+                $select = mysqli_query($conn, "SELECT * FROM `users` WHERE `username` LIKE '".$usrn."' AND `pss` LIKE '".$pswd."'");
+                    if(!mysqli_num_rows($select)) {
+                      echo "<script>alert('Account does not exits')</script>";
+                    }else{
+                      $_SESSION['username'] = $usrn;
+                      $_SESSION['pssword'] = $pswd;
+                      $row = $select->fetch_assoc();
+                      $_SESSION['instagramID'] = $row['instagramCode'];
+                      $_SESSION['accessToken'] = $row['accesToken'];
+                      $_SESSION['pageID'] = $row['pageID'];
+                      header("Location:".$loginUrl);
+                      ob_end_flush(); 
+                    }
+              }
+            }
+	?>
+```
+Then, in the body of the 
