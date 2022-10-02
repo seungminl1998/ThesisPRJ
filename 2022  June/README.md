@@ -447,59 +447,45 @@ When the user clicks the add button, an action will be triggered using JQuery. I
 The code above shows how the tag groups are shown in the user interface. First we connect to the database and create a query. Since this time we need to fetch the data from the database we use the SHOW TABLES query. We check if the connection was established correctly and if it was we open a while statement to get through all the elements in the table. For each element, we create a form. As it can be seen in the code, we are creating a whole HTML code using echo of PHP. For each element, we create a form with an input that will be hidden. This will be explained later on. Moreover, a button is created and it will show the user the name of the table. Each element will be a clickable button because the users must be able to open the tag group to edit the hashtag list. The reason why there is a hidden input box is because the input box will contain the name of the table which, later on, will be used to fetch and open the corresponding table containing the hashtag list.
 
 ```html
+<script>
 function clickHandler(event){
 			var value = $thehomes.val();
-
-			/*
-				const settings = {
+		const settings = {
 				"async": true,
 				"crossDomain": true,
-				"url": "https://hashtagy-generate-hashtags.p.rapidapi.com/v1/insta/tags?keyword="+value+"&include_tags_info=true",
+				"url": "https://instagram-hashtags.p.rapidapi.com/?keyword="+value,
 				"method": "GET",
 				"headers": {
 					"X-RapidAPI-Key": "c0f97e33dcmshe9fcb3dc0d40f21p116ac0jsn66914a52595f",
-					"X-RapidAPI-Host": "hashtagy-generate-hashtags.p.rapidapi.com"
+					"X-RapidAPI-Host": "instagram-hashtags.p.rapidapi.com"
 				}
-				};
-			$.ajax(settings).done(function (response) {
-				console.log(response);
-			});
-			*/
-				const settings = {
-						"async": true,
-						"crossDomain": true,
-						"url": "https://instagram-hashtags.p.rapidapi.com/?keyword="+value,
-						"method": "GET",
-						"headers": {
-							"X-RapidAPI-Key": "c0f97e33dcmshe9fcb3dc0d40f21p116ac0jsn66914a52595f",
-							"X-RapidAPI-Host": "instagram-hashtags.p.rapidapi.com"
-						}
-					};
+			};
 
-					$.ajax(settings).done(function (response) {
-						var thecount = response['length'];
-						for(var i = 0; i<thecount; i++){
-							var tr = document.createElement("tr");
-							var td = document.createElement("td");
-							var td1 = document.createElement("td");
-							var buttons = document.createElement("button");
-							var b = document.createElement("b");
-							buttons.setAttribute("class","cops");
-							var txt1 = response[i]['keyword'];
-							var txt2 = response[i]['post_last_hr'];
-							if(txt2 > 1000){
-								b.setAttribute("style","color:#29a659");
-							}else if(txt2 > 1800){
-								b.setAttribute("style","color:#db4047");
-							}
-							buttons.append(b);
-							buttons.append(txt1);
-							td1.append(txt2);
-							td.append(buttons);
-							tr.append(td,td1);
-							$("#tables").append(tr);
-						}
-					});
+			$.ajax(settings).done(function (response) {
+				var thecount = response['length'];
+				for(var i = 0; i<thecount; i++){
+					var tr = document.createElement("tr");
+					var td = document.createElement("td");
+					var td1 = document.createElement("td");
+					var buttons = document.createElement("button");
+					var b = document.createElement("b");
+					buttons.setAttribute("class","cops");
+					var txt1 = response[i]['keyword'];
+					var txt2 = response[i]['post_last_hr'];
+					if(txt2 > 1000){
+						b.setAttribute("style","color:#29a659");
+					}else if(txt2 > 1800){
+						b.setAttribute("style","color:#db4047");
+					}
+					buttons.append(b);
+					buttons.append(txt1);
+					td1.append(txt2);
+					td.append(buttons);
+					tr.append(td,td1);
+					$("#tables").append(tr);
 				}
+			});
+		}
+</script>
 ```
 
