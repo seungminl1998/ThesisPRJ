@@ -41,3 +41,4 @@ The code above is the PHP code to connect with the database to interact with it 
 	} 				
 ?>
 ```
+After the user adds a 
