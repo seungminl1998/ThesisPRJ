@@ -19,3 +19,17 @@ I had to write the access token, the page ID and the instagram account ID for th
 	But now, those information will be brought from the database.
 	
 Before being able to register, the users must send us an email saying that they want to use the application. Then, we will send them the information of where they need to send the money and what they need to do. The code below is the code for it.
+
+```php
+    <?php
+    	if(isset($_POST['cnt'])){
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			// collect value of input field
+			$data = $_REQUEST['mail'];
+			$sql = "INSERT INTO emails (email) VALUES ('$data')";
+			$conn->query($sql);
+		}
+	}
+      ?>
+```
+As always, there is a form with an input box and a submit button. The user must enter a valid email that we can contact. When the email is entered, it will be saved in the database and we will send them the email. 
