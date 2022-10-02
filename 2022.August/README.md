@@ -108,3 +108,4 @@ const settings = {
 	});
 </script>
 ```
+The code above is a jQuery code which is used to get the data from the Google Trend API. The API would give us the result in JSON format so I use the data fetched from the JSON and create table rows and columns to show it to the user in the user interface. In order to use the Google Trend API, I do not have to put any values as in the Instagram Hashtag API. This is because the Instagram Hashtag API returns the suggested or related keyword to the keyword typed by the user. However, the Google Trend API crawls the most searched keyword from google and gives us the data in JSON format. Hence, we do not have to specify any values but we can specify the location and also the date. If we do not specify the location and date, the API would return us the most trending keyword in the United States with today's date. Since we want the API to return the most popular keyword today, we do not specify the date nor the location.
