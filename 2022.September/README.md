@@ -80,3 +80,27 @@ At the top of the hashtag4.php file, we can see that there are more session vari
 ```
 The code above is used to call the top media with the hashtag that the user searched for. We use the hashtagID and append it to the endpoint. Then, we assign the required parameters which are the user ID, access token of the authenticated user and the fields that we need. We need the ID of the post, caption, the children images, comment count, like count, the media type and the media link. After we assign the parameters, we make the API call. The API will return the result in JSON format.
 
+```html
+        <div class = "moreInfo">
+            <div class = "theTop">----- <b>TOP</b> Related Posts -----</div>
+            <div class = "outClose"><button class = "close" onclick="clickHandlers(event)">x</button></div>
+            <div class="pages-list-item">
+                <?php $x = 0; ?>
+            	<?php for($x = 0; $x < 14; $x++){?>
+                	<?php if ('IMAGE' ==  $hashtagTopMedia['data'][$x]['media_type']) : ?>
+                    		<div class = "tps<?php echo $x?>">
+					<img style="margin-bottom: 10px; margin-left: 20px; height:320px" src="<?php echo  $hashtagTopMedia['data'][$x]['media_url']; ?>" />
+                    		<div id = "tpss<?php echo $x?>"><?php $string = $hashtagTopMedia['data'][$x]['caption']; ?>
+                        	<?php
+                        	$string = preg_replace('/#\w+/', '<b>$0</b>', $string, -1, $count);
+                        	echo ($string);
+                        	?><br>
+                                <b>Hashtag Count: </b><?php echo $count?><br><br>
+                    		<b>Comments Count: </b><?php echo  $hashtagTopMedia['data'][$x]['comments_count']; ?><br><br>
+                    		<b>Like Count: </b><?php echo  $hashtagTopMedia['data'][$x]['like_count']; ?>
+                   		</div>
+                   	 </div>
+			<?php endif; }?>
+             </div>
+        </div>
+```
