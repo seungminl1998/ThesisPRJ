@@ -1,6 +1,7 @@
 <h1>Graduation Thesis Project (성균관대학교), 2022</h1>
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
+
     The information of updates of each month is in the README file of the folder above.
 
 The project is called **InSEO**, short for Instagram Search Engine Optimization, which will be a service for Instagram Influencers.
