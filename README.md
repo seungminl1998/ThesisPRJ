@@ -1,4 +1,4 @@
-<h1>Graduation Thesis Project (성균관대학교), 2022</h1>
+<h1>Graduation Thesis Project (성균관대학교), 2022</h1>s
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
 
