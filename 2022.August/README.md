@@ -1,6 +1,17 @@
 <h1>August 2022, UPDATES</h1>
 In this month's update, I made the hashtag search more interactable with the user. Moreover, I managed to finish the caption page which I could not finish in the last update. The users can now add captions to their captions list. One important to remember here is that all the users will have their own captions bag and their own tag bag.
-First I will start explaining the caption page.
+
+<h2>Amount of money used until now</h2>
+
+| ITEM | COST |
+|  :---: |  :---: |
+| Domain  | ₩ 20,000  |
+| SSL  | ₩ 48,000  |
+| Hosting Service  | ₩ 160,000  |
+| Hashtag API  | ₩ 7,000 per Month  |
+| **TOTAL**  | **₩ 242,000**  |
+
+	I cancelled the previous API and subscribed to a new Hashtag API
 
 <h3>Captions Page</h3>
 The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
