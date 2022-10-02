@@ -409,3 +409,21 @@ The hashtag page is the page where the users will be able to save their hashtags
         </form>
 ```
 The code above shows the first form which is used when the user tries to create a new tag group. The user will write the tag group title and will add the add button to create a table in the database which will later on contain the hashtags. The code below will show how we are managing the database.
+
+```php
+    $addtable.click(function(){
+      <?php
+        $servername = "localhost";
+        $username = "thesis";
+        $password = "theskkuproject1!";
+        $dbname = "test";
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        $sql = "CREATE TABLE " . $_GET['tableN'] ." (
+          id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+          hashtag VARCHAR(30) NOT NULL
+          )";
+        $conn->query($sql)
+      ?>
+    })
+```
+When the user clicks the add button, an action will be triggered using JQuery. Inside the triggered action function, there will be a PHP that will be used to connect with the database and update or create tables. The servername, username, password, and the database name is needed in order to connect to the database. Then we establish a connection using mysqli. Then, we make a query which in this case would be to create a table with the name written in the input box. Since the input box is inside the form tag, and the form tag is of type GET, we can get the input value using $_GET variable. This is how we connect to the database and create a new table.
