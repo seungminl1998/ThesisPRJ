@@ -358,7 +358,9 @@ In order to get those values of a post, we need to reach for the $insights[value
 			</div>
 		</div>
 ```
-The code above shows what does InSEO calculates and how it is giving out the recommendations. We will be calculating the like to follower ratio, comment to like ratio and the impression rate. This is the first thing we do in this chunk of code. The variables used here were initialized above and the values were given when getting the insight values. After calculating this we initialize another variable $rcount. $rcount is the variable that will be used to check how optmized the post is. The lower its number is, the post will get a better grade. We compare the values calculated with the standard that we pre-defined. If they are lower, we increase the $rcount by one and give out the user a recommendation that would help them optmized their post. If not, we do nothing.
+The code above shows what does InSEO calculates and how it is giving out the recommendations. We will be calculating the like to follower ratio, comment to like ratio and the impression rate. This is the first thing we do in this chunk of code. The variables used here were initialized above and the values were given when getting the insight values. After calculating this we initialize another variable $rcount. $rcount is the variable that will be used to check how optmized the post is. The lower its number is, the post will get a better grade. We compare the values calculated with the standard that we pre-defined. If they are lower, we increase the $rcount by one and give out the user a recommendation that would help them optmized their post. If not, we do nothing. 
+	    
+I did a research of many instagram influencer accounts. From the ones that were doing well to those that were normal. By watching them, I got an average value of the like to follower ratio, comment to like ratio and the impression rate. This became the standard of InSEO when calculating the post grade.
 
 ```html
 		<div class = "contentG">
