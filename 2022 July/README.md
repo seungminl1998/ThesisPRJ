@@ -80,4 +80,5 @@ After the users receive the email and follow all the steps, they will be able to
 ```
 The code above runs when the submit button is clicked. We can do that by using the isset funciton. We check if the submit button is clicked and if it was clicked we start inserting the data into the database. First we get all the data that were typed in each registration field. We can get all those data using the $_REQUEST function. After getting the values, we start a database query and start inserting the data into the corresponding field. Moreover, we create another 2 more queries that will create 2 tables each containing the tags and the captions of the user.
 
-	One important point here is that the submit button to complete the registration will not be active until all fields are filled correctly.
+	One important point here is that the submit button to complete the registration 
+	will not be active until all fields are filled correctly.
