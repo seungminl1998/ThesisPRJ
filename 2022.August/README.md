@@ -66,6 +66,7 @@ With the result that we got from the query we run a while loop to create the div
 
 <h3>Hashtag Page</h3>
 The hashtag page is the page where the users will be able to save their hashtag ideas in their tag bag and also do hashtag researches. The update that I made was that I changed the Hashtag API that I was using. Moreover, I wanted to add more features to this page which is going to be explained later. The professor gave me the idea of providing the users with a list of the most popular keywords typed each day. The reason behind this was because the it would help the users get a peek of what is trending and what is not. This would help the users create trending content which is everything in social media. Hence, instead of just showing the users the suggested keywords regarding their post only, I decided to show them a daily trending keyword list with its search volume. In order to do this I needed to change the API I was using.
+
 	I changed the API from Instagram Hashtag API to Google Trend API.
 	The Instagram Hashtag API would have cost me ₩5,000 per month but now the Google Trend API costs me ₩7,000 per month. 
 
