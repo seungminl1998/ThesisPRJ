@@ -55,3 +55,40 @@ With the result that we got from the query we run a while loop to create the div
 
 <h3>Hashtag Page</h3>
 The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
+
+```html
+const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://google-trend-api.p.rapidapi.com/dailyTrends?geo=US",
+        "method": "GET",
+        "headers": {
+          "X-RapidAPI-Key": "c0f97e33dcmshe9fcb3dc0d40f21p116ac0jsn66914a52595f",
+          "X-RapidAPI-Host": "google-trend-api.p.rapidapi.com"
+        }
+      };
+	$.ajax(settings).done(function (response) {
+		var thecount = response['length'];
+		for(var i = 0; i<thecount; i++){
+		var tr = document.createElement("tr");
+		var td = document.createElement("td");
+		var td1 = document.createElement("td");
+		var buttons = document.createElement("button");
+		var b = document.createElement("b");
+		buttons.setAttribute("class","cops");
+		var txt1 = response[i]['keyword'];
+		var txt2 = response[i]['post_last_hr'];
+		if(txt2 > 1000){
+			b.setAttribute("style","color:#29a659");
+		}else if(txt2 > 1800){
+			b.setAttribute("style","color:#db4047");
+		}
+		buttons.append(b);
+		buttons.append(txt1);
+		td1.append(txt2);
+		td.append(buttons);
+		tr.append(td,td1);
+		$("#tables").append(tr);
+		}
+	});
+```
