@@ -63,3 +63,19 @@ By calling this api, we will be getting the ID of the hashtag searched. As it ca
 ?>
 ```
 At the top of the hashtag4.php file, we can see that there are more session variables. This is because this page is in charge of showing the users a pop-up box of regarding the keyword that the user searched for. Now we have 2 new variables which is $hashtagID and $hash. These variables are going to be used just in the hashtag4.php file.
+
+```php
+<?php
+                $hashtagTopMediaEndpointFormat = ENDPOINT_BASE . '{ig-hashtag-id}/top_media?user_id={user-id}&fields=id,caption,comments_count,like_count,media_type{IMAGE},media_url,permalink';
+                // top media for hashtag
+                $hashtagId = $_SESSION['hashtagId'];
+                $hashtagTopMediaEndpoint = ENDPOINT_BASE . $hashtagId . '/top_media';
+                $hashtagTopMediaParams = array(
+                    'user_id' => $instagramAccountId,
+                    'fields' => 'id,caption,children,comments_count,like_count,media_type{IMAGE},media_url,permalink',
+                    'access_token' => $accessToken
+                );
+                $hashtagTopMedia = makeApiCall( $hashtagTopMediaEndpoint, 'GET', $hashtagTopMediaParams );
+?>
+```
+The code above is used to call the top media with the hashtag that the user searched for.
