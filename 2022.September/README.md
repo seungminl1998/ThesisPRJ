@@ -12,3 +12,7 @@ In this month's update, I made many changes to the hashtag page. In the last ver
 | Hashtag API  | ₩ 5,000 per Month  |
 | **TOTAL**  | **₩ 247,000**  |
 
+	I re-subscribed to the Hashtag API
+
+<h3>Hashtag Page</h3>
+The captions page is the last page I made where the users will be able to see their saved captions. In this page the users will be able to add and delete their caption ideas to be added in their future posts.
