@@ -128,4 +128,8 @@ The jQuery above is used to check if the fields are correctly filled. The code a
 ```
 In the body of the index page, there will be a username and password field. The user must fill in the correct information in those fields in order for them to be able to click and continue to facebook OAUTH. The code above is the code used to check if the user is a registered user or not. The input boxes are inside a form and we request their values inside PHP using $_REQUEST. Then, we execute a database query to search if there is any data matching the values collected from the input boxes. If there exists a data in which the username and password match, then the server will save the data inside a session using $_SESSION. This session variables will continue throughout all the project. This is how I got rid of the use of the defines file.
 - The $_SESSION['username'] will contain the username of the user.
-- 
+- The $_SESSION['instagramID'] will contain the instagram code of the authenticated user.
+- The $_SESSION['accessToken'] will contain the access code of the authenticated user.
+- The $_SESSION['pageID'] will contain the page ID of the authenticated user.
+
+After getting all those values, we continue to the Facebook OAUTH to get the permissions and all the necessary extra data.
