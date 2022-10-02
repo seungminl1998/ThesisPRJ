@@ -13,6 +13,10 @@ First I will start explaining the caption page.
 			$conn->query($sql);
 		}
 	}
+```
+The code above is the PHP code to connect with the database to interact with it to update the caption list of the authenticated user. We always put the input box and the button inside a form tag. This time we also created a form tag and put an input box and a button in it. When the user clicks the add caption button, the first if statement will run. By using the isset function we can know which button was clicked in the page. So when the add caption button is clicked, the first if statement will run and it will request the value of the input box using $_REQUEST. The user will write the caption idea inside the input box. After getting the value, a query will be made to the database which will insert the caption into the corresponding column. The $conn->query is the function useto execute the database query from PHP.
+
+```php
 	if(isset($_POST['delb'])){
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			// collect value of input field
@@ -37,4 +41,3 @@ First I will start explaining the caption page.
 	} 				
 ?>
 ```
-The code above is the PHP code to connect with the database to interact with it to update the caption list of the authenticated user. We always put the input box and the button inside a form tag. This time we also created a form tag and put an input box and a button in it. When the user clicks the add caption button, the first if statement will run. By using the isset function we can know which button was clicked in the page. So when the add caption button is clicked, the first if statement will run and it will request the value of the input box using $_REQUEST. The user will write the caption
