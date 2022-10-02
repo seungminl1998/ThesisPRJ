@@ -48,3 +48,35 @@ As always, there is a form with an input box and a submit button. The user must 
 ```
 The code above is the jQuery to check if the email is written in the correct format. The submit button will activate if the email is written in the correct form. In order to make this work I used the regular expression to keep track of the string sequence. <br><br>
 After the users receive the email and follow all the steps, they will be able to get the information to register. Then, they will start the registration process. The code below shows how the data is saved in the database. 
+
+```php
+    <?php
+      if(isset($_POST['sumb'])){
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // collect value of input field
+            $acs = $_REQUEST['acs'];
+            $pgid = $_REQUEST['pgid'];
+            $inst = $_REQUEST['inst'];
+            $ids = $_REQUEST['ids'];
+            $idss = $_REQUEST['idss'];
+            $sql = "INSERT INTO users (username, pss, accesToken, pageID, instagramCode) VALUES ('$ids', '$idss', '$acs','$pgid','$inst')";
+            $sql1 = "CREATE TABLE `thesis`.`" . $ids .".caption` (
+              id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+              caption VARCHAR(300) NOT NULL
+              )";
+              $sql2 = "CREATE TABLE `thesis`.`" . $ids .".tags` (
+                tagName VARCHAR(300) NOT NULL PRIMARY KEY,
+                tags VARCHAR(300)
+                )";
+            $resutl = $conn->query($sql);
+              if (!$resutl){
+                echo "<script>alert('Username Not Available')</script>";
+              }
+            $conn->query($sql1);
+            $conn->query($sql2);
+          }
+        }
+      ?>
+```
+The code above runs when the submit button is clicked. We can do that by using the isset funciton. We check if the submit button is clicked and if it was clicked we start inserting the data into the database. First we get all the data that were typed in each registration field. We can get all those data using the $_REQUEST function. After getting the values, we start a database query and start inserting the data into the corresponding field. Moreover, we create another 2 more queries that will create 2 tables each containing the tags and the captions of the user.
+	One important point here is that the submit button to complete the registration will not be active until all fields are filled correctly.
