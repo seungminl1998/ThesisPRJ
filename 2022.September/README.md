@@ -104,3 +104,4 @@ The code above is used to call the top media with the hashtag that the user sear
              </div>
         </div>
 ```
+The code above shows how am I using the JSON result file to show it in the user interface. The moreInfo div is the container div of the pop-up for the top related posts. As all other pop-ups in the application, it will have a close button.
