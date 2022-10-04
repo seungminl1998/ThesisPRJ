@@ -1,4 +1,4 @@
-<h1>April 2022, UPDATES</h1>
+<h1>April 2022, UPDATES</h1>s
 I am making the front end of the <b>Application InSEO</b>.
 InSEO is a service that will be made for instagram influencers however for this project, it will just be used by the creator, myself, because
 an upgraded version of the API which is paid. However, the alogrithm that will calculate the post's grade will be there which can be used by other users
