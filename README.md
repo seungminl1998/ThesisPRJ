@@ -33,7 +33,10 @@ It will be easier for them to manage their post and profile and they will also b
 - [x] Users can do hashtag research. (Search for trending and related hashtags)
 - [x] Users can create their own caption bag.
 - [x] Users can logout.
-- [ ] Users will be able to 
+- [x] The web-application is compatible with smart phones.
+- [ ] Users will be able to share their Tag Bag with others.
+- [ ] Users will be able to share their caption bag.
+- [ ] Users will be able to register without the need of an access code.
 
 <h2>Reason of Project</h2>
 
