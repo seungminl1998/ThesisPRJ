@@ -24,8 +24,16 @@ It will be easier for them to manage their post and profile and they will also b
 
     Check Marks are the features that are available. The one's that are not checked are in progress.
 
-- [x] (for unchecked checkbox)
-- [ ] 
+- [x] Users can register to InSEO. (The user needs an access code from the developer)
+- [x] Users can login to InSEO.
+- [x] Users can check their instagram posts.
+- [x] Users can check their instagram post's meta data and calculations.
+- [x] Users can check their instagram post's hashtags and its related posts.
+- [x] Users can create their own tag bag.
+- [x] Users can do hashtag research. (Search for trending and related hashtags)
+- [x] Users can create their own caption bag.
+- [x] Users can logout.
+- [ ] Users will be able to 
 
 <h2>Reason of Project</h2>
 
