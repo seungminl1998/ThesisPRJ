@@ -21,7 +21,7 @@ It will be easier for them to manage their post and profile and they will also b
 | **TOTAL**  | **₩ 247,000**  |
 
 <h2>Current Features</h2>
-
+- [ ] (for unchecked checkbox)
 
 <h2>Reason of Project</h2>
 
