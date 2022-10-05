@@ -22,6 +22,8 @@ It will be easier for them to manage their post and profile and they will also b
 
 <h2>Current Features</h2>
 
+    Check Marks are the features that are available. The one's that are not checked are in progress.
+
 - [x] (for unchecked checkbox)
 - [ ] 
 
