@@ -1,4 +1,5 @@
 <h1>Graduation Thesis Project - 성균관대학교, 2022</h1>
+<img width="112" alt="Screen Shot 2022-10-06 at 7 46 12 AM" src="https://user-images.githubusercontent.com/101083759/194177495-788d398a-3e37-4798-8895-ecf0bcc3f3a9.png">
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
     The information of updates of each month is in the README file of the folder above.
