@@ -1,7 +1,6 @@
 <h1>Graduation Thesis Project (성균관대학교), 2022</h1>
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
-
     The information of updates of each month is in the README file of the folder above.
 
 The project is called **InSEO**, short for Instagram Search Engine Optimization, which will be a service for Instagram Influencers.
@@ -20,6 +19,9 @@ It will be easier for them to manage their post and profile and they will also b
 | Google Trends API  | ₩ 7,000 per Month  |
 | Hashtag API  | ₩ 5,000 per Month  |
 | **TOTAL**  | **₩ 247,000**  |
+
+<h2>Current Features</h2>
+
 
 <h2>Reason of Project</h2>
 
