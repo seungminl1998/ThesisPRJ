@@ -2,7 +2,9 @@
 <img width="112" alt="Screen Shot 2022-10-06 at 7 46 12 AM" src="https://user-images.githubusercontent.com/101083759/194177592-e54ab616-6cf1-4eab-a18a-509cc9526b14.png">
 This is the Thesis Project Documentation page for <b>SKKU Seungmin LEE</b>.
 
+
     The information of updates of each month is in the README file of the folder above.
+
 
 The project is called **InSEO**, short for Instagram Search Engine Optimization, which will be a service for Instagram Influencers.
 By the ends of this project, the web application will be able to grade the posts of an influencer so that they can see how well they are doing.
