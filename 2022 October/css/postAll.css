@@ -1,0 +1,1046 @@
+@font-face {
+  font-family: "avenir";
+  src: url("fonts/AvenirLTStd-Book.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "avenirB";
+  src: url("fonts/AvenirLTStd-Black.otf");
+  font-style: bold;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "avenirI";
+  src: url("fonts/AvenirLTStd-Roman.otf");
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "stein";
+  src: url("fonts/Steinfeld DEMO.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+p{
+  margin: 0;
+}
+			#logout{
+			font-size: 15px;
+    font-family: 'avenirI';
+    color: white;
+    text-align: right;
+    margin-top: -18px;
+    margin-right: 20px;
+		}
+
+		#logut{
+			background-color: #374785;
+    border: none;
+    font-family: avenir;
+    font-size: 13px;
+    font-color: white;
+    color: white;
+		}
+.suggest{
+    width: 130px;
+    height: 30px;
+    font-family: "avenirB";
+    margin-top: 10px;
+    color: black;
+    background: azure;
+    border: solid 1px;
+    border-radius: 10px;
+}
+#grad{
+  margin-top:30px;
+}
+#insta{
+  grid-row: 2/4;
+  margin-top: 5px;
+  font-size: 30px;
+}
+body{
+  background-color: #fff;
+}
+#top{
+  background-color: #374785;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#bottom{
+  background-color: #374785;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+}
+#topDesc{
+  font-family: "avenirB";
+  color:white;
+  text-align: center;
+  margin-top: 10px;
+}
+.title{
+  font-family: "stein";
+  font-size:30px;
+  font-weight:200;
+  letter-spacing:1px;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+}
+.description{
+  font-family: "avenirI";
+  margin-top: -15px;
+  font-weight:200;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+}
+#container{
+  width: 100%;
+  margin-top:50px;
+  height: 660px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#topleft{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  font-family: "stein";
+  font-size: 50px;
+  text-align: center;
+  font-style:bold;
+}
+#topContainer{
+  grid-row:2/3;
+  grid-column: 2/4;
+  display: grid;
+  font-family: "avenir";
+  font-size: 13px;
+}
+#left{
+  font-size:30px;
+  line-height: 80px;
+color:#374785;
+}
+#right{
+  margin-top: 8px;
+  line-height: 20px;
+}
+#theinfo{
+  grid-row:1/2;
+grid-column: 1/4;
+  display: flex;
+  justify-content: space-around;
+}
+#thefollows{
+  text-align: center;
+}
+#menu{
+  grid-row:2/3;
+grid-column: 1/4;
+  height: 29px;
+  text-align: center;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "avenirB";
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+border-radius:10px;
+box-shadow: 1px 1px 8px #374785;
+color:#374785;
+
+}
+#hme{
+width:173px;
+  line-height: 29px;
+}
+#hash{
+width:173px;
+  line-height:29px;
+
+}
+
+#caption{
+width:173px;
+  line-height:29px;
+}
+.dash{
+  line-height: 29px;
+}
+#bodyContainer{
+  margin-top:5px;
+  font-family: "avenirB";
+  grid-row:3/20;
+  grid-column:1/5;
+  height: 474px;
+  overflow-y: scroll;
+}
+#bodyContainer::-webkit-scrollbar {
+    display: none;
+}
+#posts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+}
+.imgs{
+  height: 230px;
+  width: 332px;
+}
+.thep{
+  height: 230px;
+  position: relative;
+}
+.hov{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #374785;
+  overflow: hidden;
+  width: 0;
+  height: 230px;
+  transition: .5s ease;
+}
+.thegradeP{
+  font-family: "avenirI";
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  margin-top:90px;
+}
+.pGrade{
+  font-family: "avenirI";
+  font-size:50px;
+  color: white;
+  text-align: center;
+}
+.thep:hover .hov{
+  width: 50%;
+}
+#home{
+  border:none;
+  background-color: #fff;
+    color: #374785;
+    font-weight: 600;
+}
+
+#hashtag{
+  border:none;
+  background-color: #fff;
+    font-weight: 600;
+color:#717374;
+transition: color-font-weight 0.5s;
+}
+#hashtag:hover{
+color: #374785;
+
+}
+#captionB{
+  border:none;
+  background-color: #fff;
+color:#717374;
+    font-weight: 600;
+}
+#captionB:hover{
+color: #374785;
+
+}
+#moreInfo{
+  background-color: black;
+  width: 1000px;
+  height: 600px;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 170px;
+  border-radius: 10px;
+}
+			body {
+				font-family: 'Helvetica';
+			}
+
+			.pages-list {
+				display: block;
+			}
+
+			.pages-list-item {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				margin-top: 10px;
+				width: 950px;
+				margin-left: 10px;
+				padding: 10px;
+				font-size: 9px;
+				grid-row:3;
+			}
+
+			.pages-media {
+				width: 350px;
+				grid-column: 1;
+				grid-row: 1;
+				border: solid 1px #374785;
+			}
+
+			.raw-response {
+				width: 100%;
+				height: 600px;
+			}
+
+			.nav-container {
+				margin-top: 20px;
+				font-size: 20px;
+				display: inline-block;
+				width: 100%;
+			}
+
+			.nav-next {
+				float: right;
+			}
+
+			.profile-container {
+				display: inline-block;
+				width: 100%;
+			}
+
+			.profile-image-container {
+				float: left;
+			}
+
+			.profile-image-container img {
+				width: 50px;
+				border-radius: 50%;
+			}
+
+			.child-media {
+				width: 70px;
+			}
+
+			textarea {
+				width: 100%;
+				height: 500px;
+			}
+			.moreInfo{
+				font-family: "avenir";
+				background-color: white;
+				border-color: #374785;
+				width: 1000px;
+				height: 550px;
+				position: fixed;
+				margin-top: 30px;
+				margin-left: 170px;
+				border-radius: 10px;
+				z-index: 100;
+				overflow-y: scroll;
+				animation: fadeIn 0.5s;
+				display:grid;
+				grid-template-rows: 1fr 1fr 1fr 1fr;
+				box-shadow: 10px 10px 10px black;
+			}
+			.moreInfo::-webkit-scrollbar {
+				display: none;
+			}
+			.close{
+				margin-right: 5px;
+				background:#374785;
+				border:none;
+				color: white;
+				float:right;
+			}
+			.outClose{
+				width:fill;
+				background:#374785;
+				position:sticky;
+				top:0;
+				grid-row: 1;
+
+			}
+			#backblack{
+				opacity: 0.5;
+				width: 100%;
+				height: 100%;
+				background: black;
+				overflow:hidden;
+				position:fixed;
+				top:0;
+				left:0;
+				z-index: 99;
+				display:none;
+			}
+			.caption{
+				font-size: 13px;
+				grid-row:1;
+				grid-column:2/5;
+				margin-left: 10px;
+			}
+			.mediaType{
+				font-family: "avenirB";
+				grid-row: 2;
+				grid-column:1;
+				text-align: right;
+				margin-top: 5px;
+			}
+			.sep{
+				grid-row: 3;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				height: 3px;
+				margin-top: 5px;
+			}
+			.caps{
+				grid-row: 4;
+				grid-column: 1/4;
+			}
+			.nums{
+				margin-top: -10px;
+			}
+			.hashes{
+				font-size: 13px;
+				font-weight: bold;
+				line-height: 20px;
+			}
+			.theTop{
+				font-family: "stein";
+				grid-row:2;
+				text-align:center;
+				font-size: 30px;
+				height: 30px;
+			}
+			.lc{
+				border-left:solid 3px #374785;
+				grid-row:4;
+				grid-column:4;
+				margin-top: 10px;
+				border-radius: 10px;
+				text-align: center;
+			}
+			.cl{
+				font-size: 20px;
+				font-family: "avenirB";
+			}
+			.sep1{
+				grid-row: 5;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				margin-top: 10px;
+				height: 3px;
+			}
+			.reach{
+				list-style-type: none;
+				text-align:center;
+				border-left: solid 1px #374785;
+				border-right: solid 1px #374785;
+				margin-top: 10px;
+				width:45%;
+			}
+			.theinsight{
+				grid-row: 6;
+				grid-column: 1/5;
+				display:flex;
+				justify-content:space-evenly;
+			}
+			.titless{
+				font-family: "avenirI";
+				font-size: 10px;
+			}
+			.vals{
+				font-family: "avenirB";
+				font-size: 20px;
+			}
+			.sep2{
+				grid-row: 7;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				margin-top: 10px;
+				height: 3px;
+			}
+			.calculations{
+				grid-row: 8;
+				grid-column:1/5;
+				display: flex;
+				justify-content: space-evenly;
+				text-align:center;
+				margin-top:1px;
+			}
+			.numss{
+				font-family: "avenirB";
+				font-size: 20px;
+			}
+			.linkss{
+				grid-row: 11;
+				grid-column: 1/5;
+				background: #374785;
+				border:none;
+				border-radius: 5px;
+				color: white;
+				margin-top:10px;
+				transition: background-color .5s;
+			}
+			.linkss:hover{
+				color: #374785;
+				background: white;
+				border:solid 1px #374785;
+				border-radius: 5px;
+			}
+			.postD{
+				font-size:10px;
+			}
+			.recommendation{
+				grid-row: 9;
+				grid-column:1/5;
+				border-top:dotted 3px #374785;
+				border-bottom:dotted 3px #374785;
+				margin-top:10px;
+				border-radius:4px;
+			}
+			.recom{
+				margin-top:10px;
+				font-size:15px;
+				color: #374785;
+				font-weight: bold;
+			}
+			.recomss{
+				font-size: 13px;
+				margin-top:3px;
+				font-weight:bold;
+				margin-bottom: 5px;
+				line-height: 23px;
+			}
+			.contentG{
+				grid-row: 10;
+				grid-column: 1/5;
+				text-align: center;
+			}
+			.grade{
+				font-style: "avenriB";
+				font-size: 50px;
+				font-weight: 800;
+			}
+
+			@media only screen and (max-width: 600px) {
+p{
+  margin: 0;
+}
+.suggest{
+    width: 130px;
+    height: 30px;
+    font-family: "avenirB";
+    margin-top: 10px;
+    color: black;
+    background: azure;
+    border: solid 1px;
+    border-radius: 10px;
+}
+#grad{
+  margin-top:30px;
+}
+#insta{
+  grid-row: 2/4;
+  margin-top: 5px;
+  font-size: 25	px;
+}
+body{
+  background-color: #fff;
+}
+#top{
+  background-color: #374785;
+  width: 390px;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#bottom{
+  background-color: #374785;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+}
+#topDesc{
+  font-family: "avenirB";
+  color:white;
+  text-align: center;
+  margin-top: 10px;
+}
+.title{
+  font-family: "stein";
+  font-size:15px;
+  font-weight:200;
+  letter-spacing:1px;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+}
+.description{
+  font-family: "avenirI";
+  margin-top: -15px;
+  font-weight:200;
+  text-align: center;
+  color: white;
+  line-height:1;
+  margin-bottom:20px;
+  font-size: 10px;
+}
+#container{
+  width: 100%;
+  margin-top:50px;
+  height: 660px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#topleft{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  font-family: "stein";
+  font-size: 50px;
+  text-align: center;
+  font-style:bold;
+}
+#topContainer{
+  grid-row:2/3;
+  grid-column: 1/4;
+  display: grid;
+  font-family: "avenir";
+  font-size: 13px;
+}
+#left{
+  font-size:20px;
+  line-height: 80px;
+color:#374785;
+}
+#right{
+	font-size:10px;
+  margin-top: 8px;
+  line-height: 20px;
+}
+#theinfo{
+  grid-row:1/2;
+grid-column: 1/4;
+  display: flex;
+  justify-content: space-around;
+}
+#thefollows{
+  text-align: center;
+}
+#menu{
+	width:375px;
+  grid-row:2/3;
+grid-column: 1/4;
+  height: 29px;
+  text-align: center;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "avenirB";
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+border-radius:10px;
+box-shadow: 1px 1px 8px #374785;
+color:#374785;
+
+}
+#hme{
+width:173px;
+  line-height: 29px;
+}
+#hash{
+width:173px;
+  line-height:29px;
+
+}
+
+#caption{
+width:173px;
+  line-height:29px;
+}
+.dash{
+  line-height: 29px;
+}
+#bodyContainer{
+  margin-top:5px;
+  font-family: "avenirB";
+  grid-row:3/20;
+  grid-column:1/5;
+  height: 395px;
+  overflow-y: scroll;
+}
+#bodyContainer::-webkit-scro	llbar {
+    display: none;
+}
+#posts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5px;
+}
+.imgs{
+  height: 155px;
+  width: 186px;
+}
+.thep{
+  height: 151px;
+  position: relative;
+}
+.hov{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #374785;
+  overflow: hidden;
+  width: 0;
+  height: 230px;
+  transition: .5s ease;
+}
+.thegradeP{
+  font-family: "avenirI";
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  margin-top:90px;
+}
+.pGrade{
+  font-family: "avenirI";
+  font-size:50px;
+  color: white;
+  text-align: center;
+}
+.thep:hover .hov{
+  width: 50%;
+}
+#home{
+	font-size:10px;
+  border:none;
+  background-color: #fff;
+    color: #374785;
+    font-weight: 600;
+}
+
+#hashtag{
+	font-size:10px;
+  border:none;
+  background-color: #fff;
+    font-weight: 600;
+color:#717374;
+transition: color-font-weight 0.5s;
+}
+#hashtag:hover{
+color: #374785;
+
+}
+#captionB{
+	font-size:10px;
+
+  border:none;
+  background-color: #fff;
+color:#717374;
+    font-weight: 600;
+}
+#captionB:hover{
+color: #374785;
+
+}
+#moreInfo{
+  background-color: black;
+  width: 353px;
+  height: 600px;
+  position: fixed;
+  margin-top: 6px;
+  margin-left: 13px;
+  border-radius: 10px;
+}
+			body {
+				font-family: 'Helvetica';
+			}
+
+			.pages-list {
+				display: block;
+			}
+
+			.pages-list-item {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin-top: 10px;
+				width: 317px;
+				margin-left: 10px;
+				padding: 10px;
+				font-size: 9px;
+				grid-row:3;
+			}
+
+			.pages-media {
+				width: 313px;
+				grid-column: 1;
+				grid-row: 1;
+				border: solid 1px #374785;
+			}
+
+			.raw-response {
+				width: 100%;
+				height: 600px;
+			}
+
+			.nav-container {
+				margin-top: 20px;
+				font-size: 20px;
+				display: inline-block;
+				width: 100%;
+			}
+
+			.nav-next {
+				float: right;
+			}
+
+			.profile-container {
+				display: inline-block;
+				width: 100%;
+			}
+
+			.profile-image-container {
+				float: left;
+			}
+
+			.profile-image-container img {
+				width: 50px;
+				border-radius: 50%;
+			}
+
+			.child-media {
+				width: 70px;
+			}
+
+			textarea {
+				width: 100%;
+				height: 500px;
+			}
+			.moreInfo{
+				font-family: "avenir";
+				background-color: white;
+				border-color: #374785;
+				width: 353px;
+				height: 550px;
+				position: fixed;
+				margin-top: 6px;
+  				margin-left: 13px;
+				border-radius: 10px;
+				z-index: 100;
+				overflow-y: scroll;
+				animation: fadeIn 0.5s;
+				display:grid;
+				grid-template-rows: 1fr 1fr 1fr 1fr;
+				box-shadow: 10px 10px 10px black;
+			}
+			.moreInfo::-webkit-scrollbar {
+				display: none;
+			}
+			.close{
+				margin-right: 5px;
+				background:#374785;
+				border:none;
+				color: white;
+				float:right;
+			}
+			.outClose{
+				width:fill;
+				background:#374785;
+				position:sticky;
+				top:0;
+				grid-row: 1;
+
+			}
+			#backblack{
+				opacity: 0.5;
+				width: 100%;
+				height: 100%;
+				background: black;
+				overflow:hidden;
+				position:fixed;
+				top:0;
+				left:0;
+				z-index: 99;
+				display:none;
+			}
+			.caption{
+				font-size: 13px;
+				grid-row:2;
+				grid-column:1;
+				margin-left: 0px;
+			}
+			.mediaType{
+				font-family: "avenirB";
+				grid-row: 2;
+				grid-column:1;
+				text-align: right;
+				margin-top: 5px;
+				display:none;
+			}
+			.sep{
+				grid-row: 3;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				height: 3px;
+				margin-top: 5px;
+			}
+			.caps{
+				grid-row: 4;
+				grid-column: 1/4;
+			}
+			.nums{
+				margin-top: -10px;
+			}
+			.hashes{
+				font-size: 13px;
+				font-weight: bold;
+				line-height: 20px;
+			}
+			.theTop{
+				font-family: "stein";
+				grid-row:2;
+				text-align:center;
+				font-size: 30px;
+				height: 30px;
+			}
+			.lc{
+				grid-row:5;
+				grid-column:1;
+				margin-top: 20px;
+				text-align: center;
+				border-right: solid 3px #374785;
+			}
+			.cl{
+				font-size: 20px;
+				font-family: "avenirB";
+			}
+			.sep1{
+				grid-row: 5;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				margin-top: 10px;
+				height: 3px;
+			}
+			.reach{
+				list-style-type: none;
+				text-align:center;
+				border-left: solid 1px #374785;
+				border-right: solid 1px #374785;
+				margin-top: 10px;
+				width:45%;
+			}
+			.theinsight{
+				grid-row: 6;
+				grid-column: 1/5;
+				display:flex;
+				justify-content:space-evenly;
+			}
+			.titless{
+				font-family: "avenirI";
+				font-size: 10px;
+			}
+			.vals{
+				font-family: "avenirB";
+				font-size: 20px;
+			}
+			.sep2{
+				grid-row: 7;
+				grid-column: 1/5;
+				background: #374785;
+				border-radius: 10px;
+				margin-top: 10px;
+				height: 3px;
+			}
+			.calculations{
+				grid-row: 8;
+				grid-column:1/5;
+				display: flex;
+				justify-content: space-evenly;
+				text-align:center;
+				margin-top:1px;
+			}
+			.numss{
+				font-family: "avenirB";
+				font-size: 20px;
+			}
+			.linkss{
+				grid-row: 11;
+				grid-column: 1/5;
+				background: #374785;
+				border:none;
+				border-radius: 5px;
+				color: white;
+				margin-top:10px;
+				transition: background-color .5s;
+			}
+			.linkss:hover{
+				color: #374785;
+				background: white;
+				border:solid 1px #374785;
+				border-radius: 5px;
+			}
+			.postD{
+				font-size:10px;
+			}
+			.recommendation{
+				grid-row: 9;
+				grid-column:1/5;
+				border-top:dotted 3px #374785;
+				border-bottom:dotted 3px #374785;
+				margin-top:10px;
+				border-radius:4px;
+			}
+			.recom{
+				margin-top:10px;
+				font-size:15px;
+				color: #374785;
+				font-weight: bold;
+			}
+			.recomss{
+				font-size: 13px;
+				margin-top:3px;
+				font-weight:bold;
+				margin-bottom: 5px;
+				line-height: 23px;
+			}
+			.contentG{
+				grid-row: 10;
+				grid-column: 1/5;
+				text-align: center;
+			}
+			.grade{
+				font-style: "avenriB";
+				font-size: 50px;
+				font-weight: 800;
+			}
+			#logout{
+			font-size: 10px;
+    font-family: 'avenirI';
+    color: white;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: 10px;
+		}
+
+		#logut{
+			background-color: #374785;
+    border: none;
+    font-family: avenir;
+    font-size: 10px;
+    font-color: white;
+    color: white;
+		}
+			}
